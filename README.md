@@ -4,7 +4,10 @@ A modern, comprehensive, and responsive school website built with HTML5, CSS3, a
 
 ## Features & Highlights
 
-- **Complete K–10 School Architecture:** Admissions, Academics, Academic Sections (Pre-Primary, Primary, Middle, Secondary), Hostel Facilities, Activities, Photo Gallery, Achievements, Government Admission Schemes, and Contact Information.
+- **Complete K–10 School Architecture:** Admissions, Academics, Academic Sections (Pre-Primary, Primary, Middle, Secondary), Hostel Facilities, Activities, Photo Gallery, Government Admission Schemes, and Contact Information.
+- **Staff Admin Portal (`admin.html`):** Role-authenticated staff management for notices, fee structures, admission dates, academic calendar, hostel daily routine, and photo gallery uploads with automatic device compression.
+- **Dynamic Firebase Cloud Sync:** Real-time Firestore synchronization for all school data with offline/static fallbacks.
+- **Direct WhatsApp Inquiries:** Homepage Quick Admission Form and Contact Us forms automatically format and redirect inquiries to official school WhatsApp (+91 9689684323) with automatic lead archiving.
 - **Brand Header & Navigation:** Clickable school logo redirecting to home, optimized compact header layout, active dropdown menus, search modal, and responsive mobile hamburger navigation.
 - **Top Notice Bar:** Linked directly to the official [Jijamata Public School YouTube Channel](https://youtube.com/@jijamatapublicschool5042?si=lji02YHtw350a3C7).
 - **Interactive Photo Gallery:** Filterable categories with lightbox preview modal.

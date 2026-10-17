@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Admin Portal | Jijamata Public School</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #4A5823;
+            --primary-dark: #323C16;
+            --primary-light: #617332;
+            --gold: #D4AF37;
+            --gold-light: #F4E295;
+            --gold-dark: #A28218;
+            --bg: #F8F9F5;
+            --surface: #FFFFFF;
+            --border: #E2E6D5;
+            --text-dark: #1F2410;
+            --text-muted: #667055;
+            --danger: #DC2626;
+            --success: #16A34A;
+            --shadow-sm: 0 2px 8px rgba(31, 36, 16, 0.06);
+            --shadow-md: 0 8px 24px rgba(31, 36, 16, 0.08);
+            --shadow-lg: 0 16px 40px rgba(31, 36, 16, 0.12);
+            --radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text-dark);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Top Header */
+        .admin-header {
+            background-color: var(--primary-dark);
+            color: #FFFFFF;
+            padding: 16px 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: var(--shadow-md);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-brand {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .header-brand img {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: #FFFFFF;
+            padding: 2px;
+        }
+
+        .header-brand h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            margin-bottom: 2px;
+        }
+
+        .header-brand span {
+            font-size: 12px;
+            color: var(--gold-light);
+            font-weight: 500;
+            display: block;
+        }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .user-badge {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .user-badge i {
+            color: var(--gold);
+        }
+
+        .btn-logout {
+            background: transparent;
+            color: #FFFFFF;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 7px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-logout:hover {
+            background: var(--danger);
+            border-color: var(--danger);
+        }
+
+        .btn-view-site {
+            background: var(--gold);
+            color: var(--primary-dark);
+            text-decoration: none;
+            padding: 7px 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 700;
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .btn-view-site:hover {
+            background: var(--gold-light);
+            transform: translateY(-1px);
+        }
+
+        /* Login Screen */
+        .login-wrap {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, rgba(74, 88, 35, 0.08) 0%, rgba(212, 175, 55, 0.06) 100%);
+        }
+
+        .login-card {
+            background: var(--surface);
+            max-width: 440px;
+            width: 100%;
+            padding: 40px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .login-logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 16px;
+            display: block;
+        }
+
+        .login-title {
+            font-family: 'Cinzel', serif;
+            font-size: 22px;
+            color: var(--primary-dark);
+            margin-bottom: 6px;
+        }
+
+        .login-subtitle {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 28px;
+        }
+
+        .form-group {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 7px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 14px;
+            border: 1.5px solid var(--border);
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.2s ease;
+            background: #FFFFFF;
+            color: var(--text-dark);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(74, 88, 35, 0.15);
+        }
+
+        .btn-submit {
+            width: 100%;
+            background: var(--primary);
+            color: #FFFFFF;
+            border: none;
+            padding: 13px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .btn-submit:hover {
+            background: var(--primary-dark);
+        }
+
+        .alert-box {
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            margin-bottom: 18px;
+            display: none;
+            text-align: left;
+        }
+
+        .alert-danger {
+            background-color: #FEF2F2;
+            color: #991B1B;
+            border: 1px solid #FCA5A5;
+        }
+
+        .alert-success {
+            background-color: #F0FDF4;
+            color: #166534;
+            border: 1px solid #86EFAC;
+        }
+
+        /* Dashboard Container */
+        .dashboard-container {
+            flex: 1;
+            max-width: 1300px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 28px 20px 60px;
+            display: none;
+        }
+
+        /* Navigation Tabs */
+        .nav-tabs {
+            display: flex;
+            gap: 8px;
+            border-bottom: 2px solid var(--border);
+            margin-bottom: 30px;
+            overflow-x: auto;
+            padding-bottom: 2px;
+        }
+
+        .tab-btn {
+            background: none;
+            border: none;
+            padding: 12px 20px;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--text-muted);
+            cursor: pointer;
+            border-radius: 8px 8px 0 0;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+            position: relative;
+        }
+
+        .tab-btn:hover {
+            color: var(--primary);
+            background: rgba(74, 88, 35, 0.05);
+        }
+
+        .tab-btn.active {
+            color: var(--primary-dark);
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-bottom: 2px solid var(--surface);
+            margin-bottom: -2px;
+        }
+
+        .tab-btn.active::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gold);
+            border-radius: 4px 4px 0 0;
+        }
+
+        /* Tab Content Panel */
+        .tab-panel {
+            display: none;
+            background: var(--surface);
+            border-radius: var(--radius);
+            padding: 32px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border);
+        }
+
+        .tab-panel.active {
+            display: block;
+            animation: fadeIn 0.25s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .panel-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .panel-header h2 {
+            font-size: 20px;
+            color: var(--primary-dark);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .panel-header h2 i {
+            color: var(--gold);
+        }
+
+        .panel-header p {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 4px;
+        }
+
+        /* Form Grid */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Tables in Panel */
+        .admin-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+
+        .admin-table th {
+            background-color: var(--bg);
+            color: var(--primary-dark);
+            text-align: left;
+            padding: 12px 16px;
+            font-size: 13px;
+            font-weight: 700;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .admin-table td {
+            padding: 14px 16px;
+            font-size: 14px;
+            border-bottom: 1px solid var(--border);
+            vertical-align: middle;
+        }
+
+        .admin-table tr:hover {
+            background-color: rgba(74, 88, 35, 0.02);
+        }
+
+        .badge-category {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+            background: var(--bg);
+            color: var(--primary-dark);
+            border: 1px solid var(--border);
+        }
+
+        .btn-action-delete {
+            background: transparent;
+            color: var(--danger);
+            border: 1px solid rgba(220, 38, 38, 0.2);
+            padding: 6px 12px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .btn-action-delete:hover {
+            background: var(--danger);
+            color: #FFFFFF;
+        }
+
+        /* Toast Popup */
+        .toast {
+            position: fixed;
+            bottom: 24px;
+            right: 24px;
+            background: var(--primary-dark);
+            color: #FFFFFF;
+            padding: 14px 24px;
+            border-radius: 10px;
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            z-index: 1000;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+            pointer-events: none;
+            border-left: 4px solid var(--gold);
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="admin-header">
+        <a href="index.html" class="header-brand" target="_blank">
+            <img src="images/logo.png" alt="School Crest">
+            <div>
+                <h1>JIJAMATA PUBLIC SCHOOL</h1>
+                <span>ADMINISTRATION PORTAL</span>
+            </div>
+        </a>
+        <div class="header-actions">
+            <a href="index.html" target="_blank" class="btn-view-site">
+                <i class="fas fa-external-link-alt"></i> View Website
+            </a>
+            <div id="authActions" style="display: none; align-items: center; gap: 12px;">
+                <div class="user-badge">
+                    <i class="fas fa-user-shield"></i>
+                    <span id="userEmailBadge">admin@jps.com</span>
+                </div>
+                <button type="button" class="btn-logout" id="btnLogout">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Login Section -->
+    <main class="login-wrap" id="loginSection">
+        <div class="login-card">
+            <img src="images/logo.png" alt="School Crest" class="login-logo">
+            <h2 class="login-title">Staff Login</h2>
+            <p class="login-subtitle">Sign in to update notices, fees, dates, and photos</p>
+
+            <div class="alert-box alert-danger" id="loginError"></div>
+
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail"><i class="fas fa-envelope"></i> Email Address</label>
+                    <input type="email" id="loginEmail" class="form-control" placeholder="Enter your email address" required autocomplete="username">
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword"><i class="fas fa-lock"></i> Password</label>
+                    <input type="password" id="loginPassword" class="form-control" placeholder="Enter your password" required autocomplete="current-password">
+                </div>
+                <button type="submit" class="btn-submit" id="btnLoginSubmit">
+                    <i class="fas fa-sign-in-alt"></i> Login to Portal
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Dashboard Section -->
+    <div class="dashboard-container" id="dashboardSection">
+        <!-- Navigation Tabs -->
+        <div class="nav-tabs">
+            <button class="tab-btn active" data-tab="tab-notices">
+                <i class="fas fa-bullhorn"></i> Notices &amp; Announcements
+            </button>
+            <button class="tab-btn" data-tab="tab-fees">
+                <i class="fas fa-rupee-sign"></i> School Fee Structure
+            </button>
+            <button class="tab-btn" data-tab="tab-dates">
+                <i class="fas fa-calendar-check"></i> Admission Dates
+            </button>
+            <button class="tab-btn" data-tab="tab-calendar">
+                <i class="fas fa-calendar-alt"></i> Academic Calendar
+            </button>
+            <button class="tab-btn" data-tab="tab-hostel">
+                <i class="fas fa-hotel"></i> Hostel Information
+            </button>
+            <button class="tab-btn" data-tab="tab-gallery">
+                <i class="fas fa-images"></i> Event Gallery
+            </button>
+        </div>
+
+        <!-- 1. NOTICES TAB -->
+        <div class="tab-panel active" id="tab-notices">
+            <div class="panel-header">
+                <div>
+                    <h2><i class="fas fa-bullhorn"></i> Latest Circulars &amp; Notices</h2>
+                    <p>Post new circulars that automatically appear on <a href="notices.html" target="_blank">notices.html</a> and the home page.</p>
+                </div>
+            </div>
+
+            <!-- Top Notice Bar Announcement Section -->
+            <div style="background: var(--bg); border: 1.5px solid var(--border); padding: 20px; border-radius: 10px; margin-bottom: 28px;">
+                <h3 style="font-size: 15px; color: var(--primary-dark); margin-bottom: 6px;"><i class="fas fa-bell" style="color: var(--gold);"></i> Homepage Top Announcement Bar</h3>
+                <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 12px;">This is the highlighted green ticker at the very top of your homepage.</p>
+                <div class="grid-2">
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <input type="text" id="topNoticeInput" class="form-control" placeholder="Admissions Open 2026–27 – Enrol for LKG to 10th Standard">
+                    </div>
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <input type="text" id="topNoticeLink" class="form-control" placeholder="admissions.html (optional link)">
+                        <button type="button" class="btn-submit" id="btnSaveTopNotice" style="width: auto; padding: 12px 20px; margin-top: 0; white-space: nowrap;">
+                            <i class="fas fa-save"></i> Save Ticker
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add Notice Form -->
+            <h3 style="font-size: 16px; margin-bottom: 16px; color: var(--text-dark);"><i class="fas fa-plus-circle" style="color: var(--primary);"></i> Add New Circular</h3>
+            <form id="addNoticeForm" style="margin-bottom: 30px;">
+                <div class="grid-3">
+                    <div class="form-group">
+                        <label>Category *</label>
+                        <select id="noticeCategory" class="form-control" required>
+                            <option value="Admissions">Admissions</option>
+                            <option value="Examinations">Examinations</option>
+                            <option value="Government Schemes">Government Schemes</option>
+                            <option value="Parent Meeting">Parent Meeting</option>
+                            <option value="Holiday &amp; Vacation">Holiday &amp; Vacation</option>
+                            <option value="General Notice">General Notice</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Date or Term *</label>
+                        <input type="text" id="noticeDate" class="form-control" placeholder="e.g. 15 Oct 2026 or Term 1" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Button Text (Optional)</label>
+                        <input type="text" id="noticeBtnText" class="form-control" placeholder="e.g. View Details / Download PDF">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Notice Headline / Title *</label>
+                    <input type="text" id="noticeTitle" class="form-control" placeholder="e.g. Term-End Examination Timetable Released" required>
+                </div>
+
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label>Brief Description *</label>
+                        <textarea id="noticeDesc" class="form-control" rows="2" placeholder="Provide full details or instructions for parents and students..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Button Action Link / PDF URL (Optional)</label>
+                        <input type="text" id="noticeLink" class="form-control" placeholder="e.g. academics.html#examination or Google Drive PDF link">
+                        <span style="font-size: 11px; color: var(--text-muted); margin-top: 4px; display: block;">You can link to an internal page or a shared Google Drive PDF link.</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit" style="width: auto; padding: 12px 28px;">
+                    <i class="fas fa-paper-plane"></i> Publish Circular
+                </button>
+            </form>
+
+            <!-- Published Notices List -->
+            <h3 style="font-size: 16px; margin-bottom: 12px; color: var(--text-dark);"><i class="fas fa-list"></i> Active Circulars on Website</h3>
+            <div id="noticesListContainer">
+                <p style="font-size: 14px; color: var(--text-muted);">Loading circulars...</p>
+            </div>
+        </div>
+
+        <!-- 2. FEES TAB -->
+        <div class="tab-panel" id="tab-fees">
+            <div class="panel-header">
+                <div>
+                    <h2><i class="fas fa-rupee-sign"></i> School Fee Structure</h2>
+                    <p>Edit annual fee amounts per standard. These display in the table on <a href="admissions.html#fee-structure" target="_blank">admissions.html</a>.</p>
+                </div>
+                <button type="button" class="btn-submit" id="btnSaveAllFees" style="width: auto; padding: 10px 22px;">
+                    <i class="fas fa-save"></i> Save Fee Changes
+                </button>
+            </div>
+
+            <div style="overflow-x: auto;">
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 50%;">Standard / Class</th>
+                            <th style="width: 50%;">Annual Tuition Fee (₹)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="feeTableBody">
+                        <!-- Populated dynamically via JS -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="form-group" style="margin-top: 24px;">
+                <label>Fee Policy Note (Displays below fee table)</label>
+                <textarea id="feeNoteInput" class="form-control" rows="2">Fee details are subject to the school's applicable rules and fee policies. Parents are advised to contact the school administration for the latest fee information and payment-related details.</textarea>
+            </div>
+        </div>
+
+        <!-- 3. ADMISSION DATES TAB -->
+        <div class="tab-panel" id="tab-dates">
+            <div class="panel-header">
+                <div>
+                    <h2><i class="fas fa-calendar-check"></i> Key Admission Dates &amp; Deadlines</h2>
+                    <p>Update milestone dates for the admission season shown on <a href="admissions.html" target="_blank">admissions.html</a>.</p>
+                </div>
+                <button type="button" class="btn-submit" id="btnSaveAdmissionDates" style="width: auto; padding: 10px 22px;">
+                    <i class="fas fa-save"></i> Save Dates
+                </button>
+            </div>
+
+            <div class="grid-2">
+                <!-- Date 1: Admission Opens -->
+                <div style="background: var(--bg); padding: 18px; border-radius: 8px; border: 1px solid var(--border);">
+                    <h4 style="margin-bottom: 12px; color: var(--primary-dark);"><i class="fas fa-door-open" style="color: var(--gold);"></i> 1. Admission Opens</h4>
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label>Day &amp; Month (e.g. 01 Apr)</label>
+                            <input type="text" id="date1Badge" class="form-control" value="01 Apr">
+                        </div>
+                        <div class="form-group">
+                            <label>Description Note</label>
+                            <input type="text" id="date1Desc" class="form-control" value="Applications accepted from 01/04/2026 to 14/06/2026">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Date 2: Admission Closes -->
+                <div style="background: var(--bg); padding: 18px; border-radius: 8px; border: 1px solid var(--border);">
+                    <h4 style="margin-bottom: 12px; color: var(--primary-dark);"><i class="fas fa-calendar-times" style="color: var(--gold);"></i> 2. Admission Closes</h4>
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label>Day &amp; Month (e.g. 14 Jun)</label>
+                            <input type="text" id="date2Badge" class="form-control" value="14 Jun">
+                        </div>
+                        <div class="form-group">
+                            <label>Description Note</label>
+                            <input type="text" id="date2Desc" class="form-control" value="Last date to submit admission application forms">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Date 3: Confirmation -->
+                <div style="background: var(--bg); padding: 18px; border-radius: 8px; border: 1px solid var(--border);">
+                    <h4 style="margin-bottom: 12px; color: var(--primary-dark);"><i class="fas fa-check-circle" style="color: var(--gold);"></i> 3. Admission Confirmation</h4>
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label>Day &amp; Month (e.g. 20 Jun)</label>
+                            <input type="text" id="date3Badge" class="form-control" value="20 Jun">
+                        </div>
+                        <div class="form-group">
+                            <label>Description Note</label>
+                            <input type="text" id="date3Desc" class="form-control" value="Communication of admission confirmation to parents">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Date 4: School Reopens -->
+                <div style="background: var(--bg); padding: 18px; border-radius: 8px; border: 1px solid var(--border);">
+                    <h4 style="margin-bottom: 12px; color: var(--primary-dark);"><i class="fas fa-school" style="color: var(--gold);"></i> 4. School Reopens</h4>
+                    <div class="grid-2">
+                        <div class="form-group">
+                            <label>Day &amp; Month (e.g. 15 Jun)</label>
+                            <input type="text" id="date4Badge" class="form-control" value="15 Jun">
+                        </div>
+                        <div class="form-group">
+                            <label>Description Note</label>
+                            <input type="text" id="date4Desc" class="form-control" value="New academic session begins on 15/06/2026">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. ACADEMIC CALENDAR TAB -->
+        <div class="tab-panel" id="tab-calendar">
+            <div class="panel-header">
+                <div>
+                    <h2><i class="fas fa-calendar-alt"></i> Academic Calendar Schedule</h2>
+                    <p>Manage event entries displayed in the table on <a href="academics.html#calendar" target="_blank">academics.html</a>.</p>
+                </div>
+            </div>
+
+            <!-- Add Calendar Item Form -->
+            <form id="addCalendarForm" style="background: var(--bg); padding: 20px; border-radius: 8px; margin-bottom: 24px; border: 1px solid var(--border);">
+                <h4 style="margin-bottom: 12px; color: var(--primary-dark);"><i class="fas fa-plus"></i> Add Calendar Entry</h4>
+                <div class="grid-3">
+                    <div class="form-group">
+                        <label>Event Name *</label>
+                        <input type="text" id="calEventName" class="form-control" placeholder="e.g. First Unit Test" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Date / Duration *</label>
+                        <input type="text" id="calEventDate" class="form-control" placeholder="e.g. August 10 – 14, 2026" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Description *</label>
+                        <input type="text" id="calEventDesc" class="form-control" placeholder="e.g. Evaluation for 1st to 10th std" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit" style="width: auto; padding: 10px 22px;">
+                    <i class="fas fa-plus-circle"></i> Add Event to Calendar
+                </button>
+            </form>
+
+            <div id="calendarListContainer">
+                <p style="font-size: 14px; color: var(--text-muted);">Loading calendar entries...</p>
+            </div>
+        </div>
+
+        <!-- 5. HOSTEL TAB -->
+        <div class="tab-panel" id="tab-hostel">
+            <div class="panel-header">
+                <div>
+                    <h2><i class="fas fa-hotel"></i> Hostel Information &amp; Daily Routine</h2>
+                    <p>Update hostel admission notice, contact numbers, and daily routine schedule shown on <a href="hostel.html" target="_blank">hostel.html</a>.</p>
+                </div>
+                <button type="button" class="btn-submit" id="btnSaveHostel" style="width: auto; padding: 10px 22px;">
+                    <i class="fas fa-save"></i> Save Contacts &amp; Note
+                </button>
+            </div>
+
+            <!-- Contacts & Note Section -->
+            <div style="background: var(--bg); padding: 20px; border-radius: 8px; border: 1px solid var(--border); margin-bottom: 24px;">
+                <h4 style="margin-bottom: 12px; color: var(--primary-dark); font-size: 15px;"><i class="fas fa-info-circle"></i> Hostel Contacts &amp; Availability Note</h4>
+                <div class="form-group">
+                    <label>Hostel Admission &amp; Seat Availability Note</label>
+                    <textarea id="hostelNoteInput" class="form-control" rows="3">For hostel seat availability, fee breakdown, and warden contact details, please get in touch with our hostel administration office.</textarea>
+                </div>
+
+                <div class="grid-2">
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label>Hostel Enquiry Phone Numbers</label>
+                        <input type="text" id="hostelPhoneInput" class="form-control" value="02427295701 / 9689684323">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label>Hostel Enquiry Email</label>
+                        <input type="email" id="hostelEmailInput" class="form-control" value="jpsbhenda@gmail.com">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Daily Routine Manager Section -->
+            <div style="background: var(--surface); padding: 24px; border-radius: 10px; border: 1px solid var(--border);">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 12px;">
+                    <div>
+                        <h3 style="color: var(--primary-dark); font-size: 17px; margin-bottom: 4px;">
+                            <i class="fas fa-clock" style="color: var(--gold);"></i> Hostel Daily Routine Schedule
+                        </h3>
+                        <p style="font-size: 13px; color: var(--text-muted); margin: 0;">
+                            Edit the timings, activities, and descriptions below. The live table on <a href="hostel.html" target="_blank">hostel.html</a> updates immediately.
+                        </p>
+                    </div>
+                    <div style="display: flex; gap: 10px;">
+                        <button type="button" id="btnAddRoutineRow" class="btn-action" style="padding: 9px 18px; font-size: 13px; background: var(--bg); border: 1px solid var(--border); border-radius: 6px; cursor: pointer; color: var(--primary-dark); font-weight: 600;">
+                            <i class="fas fa-plus"></i> Add Time Slot
+                        </button>
+                        <button type="button" class="btn-submit" id="btnSaveRoutine" style="width: auto; padding: 9px 22px; font-size: 13px;">
+                            <i class="fas fa-save"></i> Save Daily Routine
+                        </button>
+                    </div>
+                </div>
+
+                <div style="overflow-x: auto;">
+                    <table class="admin-table" id="hostelRoutineTable" style="min-width: 600px;">
+                        <thead>
+                            <tr>
+                                <th style="width: 25%;">Time / Duration</th>
+                                <th style="width: 30%;">Activity Name</th>
+                                <th style="width: 37%;">Details / Description</th>
+                                <th style="width: 8%; text-align: center;">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="routineRowsContainer">
+                            <!-- Populated dynamically via admin.js -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- 6. GALLERY TAB -->
+        <div class="tab-panel" id="tab-gallery">
+            <div class="panel-header">
+                <div>
+                    <h2><i class="fas fa-images"></i> Event Photo Gallery</h2>
+                    <p>Add new event photos that show up at the top of <a href="gallery.html" target="_blank">gallery.html</a>.</p>
+                </div>
+            </div>
+
+            <!-- Add Photo Form -->
+            <form id="addPhotoForm" style="background: var(--bg); padding: 24px; border-radius: 10px; margin-bottom: 24px; border: 1px solid var(--border);">
+                <h4 style="margin-bottom: 16px; color: var(--primary-dark); font-size: 16px;"><i class="fas fa-upload" style="color: var(--gold);"></i> Add New Event Photo</h4>
+                
+                <div class="grid-2">
+                    <div class="form-group">
+                        <label>Category *</label>
+                        <select id="photoCategory" class="form-control" required>
+                            <option value="School Events">School Events</option>
+                            <option value="Cultural Activities">Cultural Activities</option>
+                            <option value="Sports &amp; Athletics">Sports &amp; Athletics</option>
+                            <option value="Academics &amp; Science">Academics &amp; Science</option>
+                            <option value="Campus &amp; Students">Campus &amp; Students</option>
+                            <option value="Prize/Award Events">Prize/Award Events</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Photo Caption / Title *</label>
+                        <input type="text" id="photoCaption" class="form-control" placeholder="e.g. Annual Gathering Traditional Dance" required>
+                    </div>
+                </div>
+
+                <!-- Choose Image Method -->
+                <div style="background: var(--surface); padding: 18px; border-radius: 8px; border: 1.5px dashed var(--border); margin-bottom: 20px;">
+                    <div class="form-group" style="margin-bottom: 10px;">
+                        <label><i class="fas fa-camera" style="color: var(--primary);"></i> Option A: Choose Photo from Computer / Phone (Recommended)</label>
+                        <input type="file" id="photoFileInput" class="form-control" accept="image/*" style="padding: 8px; background: var(--bg);">
+                        <span style="font-size: 12px; color: var(--text-muted); margin-top: 4px; display: block;">Supports JPG, PNG, WEBP. Photos will be automatically optimized for high-speed loading.</span>
+                    </div>
+
+                    <!-- Image Preview Area -->
+                    <div id="photoPreviewWrap" style="display: none; margin-top: 14px; align-items: center; gap: 16px; background: var(--bg); padding: 12px; border-radius: 8px; border: 1px solid var(--border);">
+                        <img id="photoPreviewImg" src="" alt="Selected Preview" style="width: 80px; height: 80px; object-fit: cover; border-radius: 6px; border: 1px solid var(--border);">
+                        <div>
+                            <p id="photoPreviewName" style="font-size: 13px; font-weight: 600; color: var(--primary-dark); margin-bottom: 2px;">image.jpg</p>
+                            <span id="photoPreviewSize" style="font-size: 12px; color: var(--text-muted); display: block; margin-bottom: 4px;">120 KB</span>
+                            <button type="button" id="btnRemoveSelectedPhoto" style="background: none; border: none; color: var(--danger); font-size: 12px; cursor: pointer; padding: 0; font-weight: 600;">
+                                <i class="fas fa-times-circle"></i> Remove Photo
+                            </button>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin: 14px 0 10px; position: relative;">
+                        <span style="background: var(--surface); padding: 0 12px; font-size: 12px; color: var(--text-muted); font-weight: 600;">— OR —</span>
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label><i class="fas fa-link"></i> Option B: Enter Existing Image URL / File Path</label>
+                        <input type="text" id="photoUrl" class="form-control" placeholder="e.g. images/gallery/photo1.jpg or https://...">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit" id="btnAddPhotoSubmit" style="width: auto; padding: 12px 28px;">
+                    <i class="fas fa-plus"></i> Upload &amp; Add Photo to Gallery
+                </button>
+            </form>
+
+            <div id="galleryListContainer">
+                <p style="font-size: 14px; color: var(--text-muted);">Loading custom gallery photos...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="adminToast">
+        <i class="fas fa-check-circle" style="color: var(--gold);"></i>
+        <span id="toastMsg">Action completed successfully!</span>
+    </div>
+
+    <!-- Firebase App & Services (v9 compat for easy direct browser script usage) -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+    
+    <!-- Central Config & Admin Logic -->
+    <script src="js/firebase-config.js?v=2"></script>
+    <script src="js/admin.js?v=2"></script>
+</body>
+</html>

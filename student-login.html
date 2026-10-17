@@ -2,105 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Login - School ERP Portal</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <meta http-equiv="refresh" content="0; url=index.html">
+    <title>Redirecting...</title>
+    <script>window.location.replace("index.html");</script>
 </head>
 <body>
-    <div class="login-container">
-        <div class="login-form-wrapper">
-            <div class="login-header">
-                <div class="back-button">
-                    <a href="index.html"><i class="fas fa-arrow-left"></i> Back to Homepage</a>
-                </div>
-                <div class="login-title">
-                    <i class="fas fa-graduation-cap"></i>
-                    <h2>Student Login</h2>
-                    <p>Enter your credentials to access your academic portal</p>
-                </div>
-            </div>
-            
-            <form class="login-form" onsubmit="studentLogin(event)">
-                <div class="form-group">
-                    <label for="studentId">
-                        <i class="fas fa-id-card"></i> Student ID
-                    </label>
-                    <input type="text" id="studentId" name="studentId" placeholder="Enter your Student ID" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="password">
-                        <i class="fas fa-lock"></i> Password
-                    </label>
-                    <div class="password-input">
-                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
-                        <i class="fas fa-eye password-toggle" onclick="togglePassword()"></i>
-                    </div>
-                </div>
-                
-                <div class="form-options">
-                    <label class="remember-me">
-                        <input type="checkbox" name="remember">
-                        <span>Remember me</span>
-                    </label>
-                    <a href="#" class="forgot-password">Forgot Password?</a>
-                </div>
-                
-                <button type="submit" class="login-submit-btn">
-                    <i class="fas fa-sign-in-alt"></i> Login to Portal
-                </button>
-            </form>
-            
-            <div class="login-help">
-                <p><strong>Need Help?</strong></p>
-                <p>Contact your school administrator if you're having trouble logging in.</p>
-                <p><i class="fas fa-phone"></i> +1 (555) 123-4567 | <i class="fas fa-envelope"></i> support@school.edu</p>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        function togglePassword() {
-            const passwordInput = document.getElementById('password');
-            const passwordToggle = document.querySelector('.password-toggle');
-            
-            if (passwordInput.type === 'password') {
-                passwordInput.type = 'text';
-                passwordToggle.classList.remove('fa-eye');
-                passwordToggle.classList.add('fa-eye-slash');
-            } else {
-                passwordInput.type = 'password';
-                passwordToggle.classList.remove('fa-eye-slash');
-                passwordToggle.classList.add('fa-eye');
-            }
-        }
-
-        function studentLogin(event) {
-            event.preventDefault();
-            
-            const studentId = document.getElementById('studentId').value;
-            const password = document.getElementById('password').value;
-            
-            // For demo purposes, accept any credentials
-            if (studentId && password) {
-                // Store student info in localStorage for demo
-                localStorage.setItem('currentStudent', JSON.stringify({
-                    id: studentId,
-                    name: 'Demo Student',
-                    class: '10th Grade',
-                    section: 'A'
-                }));
-                
-                // Redirect to dashboard
-                window.location.href = 'student-dashboard.html';
-            } else {
-                alert('Please enter both Student ID and Password');
-            }
-        }
-    </script>
+    <p>Redirecting to <a href="index.html">Homepage</a>...</p>
 </body>
 </html>

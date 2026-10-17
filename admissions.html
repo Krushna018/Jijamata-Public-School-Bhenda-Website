@@ -9,10 +9,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Top Notice Bar -->
+        <!-- Top Notice Bar -->
     <div class="top-notice-bar">
         <div class="notice-container">
             <div class="notice-left">
@@ -20,23 +20,20 @@
                     <i class="fas fa-bell"></i>
                     <span>NOTICE</span>
                 </div>
-                <span class="notice-text">Admissions Open 2026–27 – Enrol for LKG, UKG, Primary &amp; Secondary Classes (1st – 10th Std)</span>
-                <span class="separator">•</span>
+                <span class="notice-text">
+                    <span class="notice-text-full">Admissions Open – Enrol for LKG, UKG, Primary &amp; Secondary Classes (1st – 10th Std)</span>
+                    <span class="notice-text-short">Admissions Open 2026–27 (LKG to 10th Std)</span>
+                </span>
             </div>
             <div class="notice-right">
-                <span class="highlight">LKG to 10th Std</span>
-                <span class="separator">•</span>
-                <span class="highlight">Est. 2003</span>
-                <span class="separator">•</span>
-                <span class="phone"><i class="fas fa-phone"></i> [Contact Number]</span>
+                <span class="phone"><i class="fas fa-phone"></i> <a href="tel:02427295701" style="color: inherit; text-decoration: none;">02427295701</a><span class="phone-second"> / <a href="tel:9689684323" style="color: inherit; text-decoration: none;">9689684323</a></span></span>
                 <div class="social-icons">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    
+                    <a href="https://wa.me/919689684323" target="_blank" rel="noopener noreferrer" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     <a href="https://youtube.com/@jijamatapublicschool5042?si=lji02YHtw350a3C7" target="_blank" rel="noopener noreferrer" class="social-icon" title="YouTube Channel"><i class="fab fa-youtube"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- Main Navigation -->
@@ -54,20 +51,40 @@
             </a>
             
             <div class="nav-menu">
-                <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
+                            <!-- Mobile Drawer Header (Only visible on mobile) -->
+            <div class="mobile-drawer-header">
+                <div class="drawer-title">
+                    <i class="fas fa-bars"></i>
+                    <span>Menu</span>
+                </div>
+                <button type="button" class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close Menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Drawer Search Bar (Only visible on mobile) -->
+            <div class="mobile-drawer-search">
+                <form class="mobile-search-form" id="mobileSearchForm">
+                    <input type="text" placeholder="Search the site..." class="mobile-search-input" id="mobileSearchInput" autocomplete="off">
+                    <button type="submit" class="mobile-search-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link"><span class="menu-label"><i class="fas fa-home menu-icon"></i> Home</span></a></li>
                     <li class="dropdown">
-                        <a href="about.html" class="nav-link">About Us <i class="fas fa-chevron-down"></i></a>
+                        <a href="about.html" class="nav-link"><span class="menu-label"><i class="fas fa-landmark menu-icon"></i> About Us</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="about.html">About School</a></li>
-                            <li><a href="about.html#founder">Our Founder</a></li>
+                            <li><a href="about.html#founder">Founders &amp; Leadership</a></li>
                             <li><a href="about.html#vision">Vision &amp; Mission</a></li>
                             <li><a href="about.html#principal">Principal's Message</a></li>
                             <li><a href="about.html#administration">Administration</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="departments.html" class="nav-link">Academic Sections <i class="fas fa-chevron-down"></i></a>
+                        <a href="departments.html" class="nav-link"><span class="menu-label"><i class="fas fa-graduation-cap menu-icon"></i> Academic Sections</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="departments.html#preprimary">Pre-Primary (LKG &amp; UKG)</a></li>
                             <li><a href="departments.html#primary">Primary (1st – 5th)</a></li>
@@ -76,16 +93,15 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="academics.html" class="nav-link">Academics <i class="fas fa-chevron-down"></i></a>
+                        <a href="academics.html" class="nav-link"><span class="menu-label"><i class="fas fa-book-open menu-icon"></i> Academics</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="academics.html#courses">Classes &amp; Subjects</a></li>
                             <li><a href="academics.html#calendar">Academic Calendar</a></li>
                             <li><a href="academics.html#examination">Examination</a></li>
-                            <li><a href="academics.html#results">Results</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="activities.html" class="nav-link">Activities <i class="fas fa-chevron-down"></i></a>
+                        <a href="activities.html" class="nav-link"><span class="menu-label"><i class="fas fa-palette menu-icon"></i> Activities</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="activities.html">Activities Overview</a></li>
                             <li><a href="sports-athletics.html">Sports &amp; Athletics</a></li>
@@ -95,7 +111,7 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="facilities.html" class="nav-link">Facilities <i class="fas fa-chevron-down"></i></a>
+                        <a href="facilities.html" class="nav-link"><span class="menu-label"><i class="fas fa-building-columns menu-icon"></i> Facilities</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="facilities.html">School Facilities</a></li>
                             <li><a href="hostel.html">Hostel Facilities</a></li>
@@ -104,7 +120,7 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="admissions.html" class="nav-link active">Admissions <i class="fas fa-chevron-down"></i></a>
+                        <a href="admissions.html" class="nav-link active"><span class="menu-label"><i class="fas fa-file-signature menu-icon"></i> Admissions</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="#process">Admission Process</a></li>
                             <li><a href="#fee-structure">Fee Structure</a></li>
@@ -113,18 +129,18 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="nav-link">Student &amp; Parents <i class="fas fa-chevron-down"></i></a>
+                        <a href="#" class="nav-link"><span class="menu-label"><i class="fas fa-users menu-icon"></i> Student &amp; Parents</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="placements.html">Student Development</a></li>
-                            <li><a href="achievements.html">Achievements &amp; Awards</a></li>
                             <li><a href="gallery.html">Photo Gallery</a></li>
                             <li><a href="notices.html">Latest Notices</a></li>
-                            <li><a href="student-login.html">Student Portal</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.html" class="nav-link">Contact us</a></li>
+                    <li><a href="contact.html" class="nav-link"><span class="menu-label"><i class="fas fa-phone-alt menu-icon"></i> Contact us</span></a></li>
                 </ul>
-                <div class="nav-actions">
+                
+            </div>
+            <div class="nav-actions">
                     <button class="search-btn" id="searchBtn">
                         <i class="fas fa-search"></i>
                     </button>
@@ -134,14 +150,14 @@
                         <span></span>
                     </button>
                 </div>
-            </div>
         </div>
     </nav>
 
+    <!-- Mobile Menu Backdrop Overlay -->
+    <div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
+
     <!-- Page Header -->
-    <section class="page-header">
-        <div class="header-content">
-            <h1>Admissions</h1>
+    <section class="page-header"><div class="header-content"><div class="breadcrumb"><a href="index.html">Home</a> / <span>Admissions</span></div><h1>Admissions</h1>
             <p>Welcome your child into our caring and nurturing school community</p>
         </div>
     </section>
@@ -186,7 +202,7 @@
                                 <span class="spec-value">Birth Certificate, Aadhar Card</span>
                             </div>
                         </div>
-                        <a href="#" class="btn btn-primary">Enquire Now</a>
+                        <a href="contact.html" class="btn btn-primary">Enquire Now</a>
                     </div>
                 </div>
 
@@ -221,7 +237,7 @@
                                 <span class="spec-value">TC, Marksheet, Aadhar Card</span>
                             </div>
                         </div>
-                        <a href="#" class="btn btn-primary">Enquire Now</a>
+                        <a href="contact.html" class="btn btn-primary">Enquire Now</a>
                     </div>
                 </div>
 
@@ -235,11 +251,15 @@
                     </div>
                     <div class="program-detail-content">
                         <p>
-                            Admissions for Classes 9th and 10th Standard are open. Our Secondary Section 
+                            Admissions for Classes 9th and 10th Standard under Maharashtra State Board (MSBSHSE) are open. Our Secondary Section 
                             provides focused academic guidance, experienced subject teachers, and 
                             board-exam preparation support for all students.
                         </p>
                         <div class="program-specs">
+                            <div class="spec-item">
+                                <span class="spec-label">Board Affiliation:</span>
+                                <span class="spec-value">Maharashtra State Board (MSBSHSE)</span>
+                            </div>
                             <div class="spec-item">
                                 <span class="spec-label">Classes:</span>
                                 <span class="spec-value">9th &amp; 10th Standard</span>
@@ -257,7 +277,7 @@
                                 <span class="spec-value">TC, Marksheet, Aadhar Card, Photos</span>
                             </div>
                         </div>
-                        <a href="#" class="btn btn-primary">Enquire Now</a>
+                        <a href="contact.html" class="btn btn-primary">Enquire Now</a>
                     </div>
                 </div>
             </div>
@@ -325,8 +345,8 @@
                 <table class="fee-table">
                     <thead>
                         <tr>
-                            <th>Standard</th>
-                            <th>Annual Fee</th>
+                            <th><i class="fas fa-graduation-cap" style="margin-right: 8px; color: var(--gold);"></i>Standard</th>
+                            <th style="text-align: right;"><i class="fas fa-rupee-sign" style="margin-right: 6px; color: var(--gold);"></i>Annual Fee</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -357,31 +377,31 @@
                 <h2>Important Dates</h2>
                 <p>Key dates for school admission process 2026–27</p>
             </div>
-            <div class="dates-grid">
+                        <div class="dates-grid">
                 <div class="date-card">
                     <div class="date-badge">
                         <span class="date-day">01</span>
-                        <span class="date-month">Jun</span>
+                        <span class="date-month">Apr</span>
                     </div>
                     <div class="date-info">
-                        <h4>Admission Enquiry Opens</h4>
-                        <p>Admission enquiry and form distribution begins</p>
+                        <h4>Admission Opens</h4>
+                        <p>Applications accepted from 01/04/2026 to 14/06/2026</p>
                     </div>
                 </div>
                 <div class="date-card">
                     <div class="date-badge">
-                        <span class="date-day">30</span>
+                        <span class="date-day">14</span>
                         <span class="date-month">Jun</span>
                     </div>
                     <div class="date-info">
-                        <h4>Last Date for Forms</h4>
+                        <h4>Admission Closes</h4>
                         <p>Last date to submit admission application forms</p>
                     </div>
                 </div>
                 <div class="date-card">
                     <div class="date-badge">
-                        <span class="date-day">10</span>
-                        <span class="date-month">Jul</span>
+                        <span class="date-day">20</span>
+                        <span class="date-month">Jun</span>
                     </div>
                     <div class="date-info">
                         <h4>Admission Confirmation</h4>
@@ -395,7 +415,7 @@
                     </div>
                     <div class="date-info">
                         <h4>School Reopens</h4>
-                        <p>New academic session 2026–27 begins for all classes</p>
+                        <p>New academic session begins on 15/06/2027</p>
                     </div>
                 </div>
             </div>
@@ -408,6 +428,7 @@
             <div class="footer-grid">
                 <div class="footer-column">
                     <div class="footer-logo">
+                        <img src="images/logo.png" alt="Jijamata Public School Logo">
                         <i class="fas fa-school"></i>
                         <h3>JIJAMATA PUBLIC SCHOOL</h3>
                     </div>
@@ -416,57 +437,68 @@
                         Nurturing young minds, building strong character, and shaping the future.
                     </p>
                 </div>
-                <div class="footer-column">
+                <div class="footer-column footer-quick-links-col">
                     <h4>Quick Links</h4>
-                    <ul>
+                    <ul class="footer-links-grid">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="about.html">About School</a></li>
                         <li><a href="departments.html">Academic Sections</a></li>
-                        <li><a href="placements.html">Student Development</a></li>
-                        <li><a href="admissions.html">Admissions</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Student Links</h4>
-                    <ul>
-                        <li><a href="#">Student Zone</a></li>
-                        <li><a href="#">Notice Board</a></li>
-                        <li><a href="#">Results</a></li>
-                        <li><a href="#">Downloads</a></li>
-                        <li><a href="#">Events</a></li>
+                        <li><a href="academics.html">Academics &amp; Calendar</a></li>
+                        <li><a href="admissions.html">Admissions 2026–27</a></li>
+                        <li><a href="schemes.html">Government Schemes</a></li>
+                        <li><a href="facilities.html">Campus Facilities</a></li>
+                        <li><a href="activities.html">Student Activities</a></li>
+                        <li><a href="cultural-events.html">Cultural Gathering</a></li>
+                        <li><a href="sports-athletics.html">Sports &amp; Athletics</a></li>
+                        <li><a href="gallery.html">Photo Gallery</a></li>
+                        <li><a href="notices.html">Latest Notices</a></li>
+                        <li><a href="hostel.html">Hostel Facilities</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h4>Contact Us</h4>
                     <ul class="contact-info">
                         <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Jijamata Public School, Bhenda BK, Ahmednagar, Maharashtra</span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Jijamata+Public+School,+Bhenda+Budruk,+Taluka+Nevasa,+District+Ahilyanagar,+Maharashtra" target="_blank" rel="noopener noreferrer" class="footer-address-link" title="Open Google Maps location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Jijamata Public School, Bhenda Budruk, Taluka Nevasa, District Ahilyanagar, Maharashtra</span>
+                            </a>
                         </li>
                         <li>
                             <i class="fas fa-phone"></i>
-                            <span>[Contact Number]</span>
+                            <span><a href="tel:02427295701">02427295701</a> / <a href="tel:9689684323">9689684323</a></span>
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
-                            <span>[School Email]</span>
+                            <span><a href="mailto:jpsbhenda@gmail.com">jpsbhenda@gmail.com</a></span>
                         </li>
                     </ul>
                     <div class="footer-social">
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        
+                        <a href="https://wa.me/919689684323" target="_blank" rel="noopener noreferrer" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                         <a href="https://youtube.com/@jijamatapublicschool5042?si=lji02YHtw350a3C7" target="_blank" rel="noopener noreferrer" class="social-icon" title="YouTube Channel"><i class="fab fa-youtube"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Jijamata Public School. All Rights Reserved.</p>
-            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Jijamata Public School. All Rights Reserved.</p><a href="#" class="back-to-top">Back to Top <i class="fas fa-arrow-up"></i></a></div>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+    <!-- Firebase & Dynamic Content -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/dynamic-content.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+

@@ -9,10 +9,10 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Top Notice Bar -->
+        <!-- Top Notice Bar -->
     <div class="top-notice-bar">
         <div class="notice-container">
             <div class="notice-left">
@@ -20,23 +20,20 @@
                     <i class="fas fa-bell"></i>
                     <span>NOTICE</span>
                 </div>
-                <span class="notice-text">Admissions Open 2026–27 – Enrol for LKG, UKG, Primary &amp; Secondary Classes (1st – 10th Std)</span>
-                <span class="separator">•</span>
+                <span class="notice-text">
+                    <span class="notice-text-full">Admissions Open – Enrol for LKG, UKG, Primary &amp; Secondary Classes (1st – 10th Std)</span>
+                    <span class="notice-text-short">Admissions Open 2026–27 (LKG to 10th Std)</span>
+                </span>
             </div>
             <div class="notice-right">
-                <span class="highlight">LKG to 10th Std</span>
-                <span class="separator">•</span>
-                <span class="highlight">Est. 2003</span>
-                <span class="separator">•</span>
-                <span class="phone"><i class="fas fa-phone"></i> [Contact Number]</span>
+                <span class="phone"><i class="fas fa-phone"></i> <a href="tel:02427295701" style="color: inherit; text-decoration: none;">02427295701</a><span class="phone-second"> / <a href="tel:9689684323" style="color: inherit; text-decoration: none;">9689684323</a></span></span>
                 <div class="social-icons">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    
+                    <a href="https://wa.me/919689684323" target="_blank" rel="noopener noreferrer" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     <a href="https://youtube.com/@jijamatapublicschool5042?si=lji02YHtw350a3C7" target="_blank" rel="noopener noreferrer" class="social-icon" title="YouTube Channel"><i class="fab fa-youtube"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <!-- Main Navigation -->
@@ -54,20 +51,40 @@
             </a>
             
             <div class="nav-menu">
-                <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
+                            <!-- Mobile Drawer Header (Only visible on mobile) -->
+            <div class="mobile-drawer-header">
+                <div class="drawer-title">
+                    <i class="fas fa-bars"></i>
+                    <span>Menu</span>
+                </div>
+                <button type="button" class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close Menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Drawer Search Bar (Only visible on mobile) -->
+            <div class="mobile-drawer-search">
+                <form class="mobile-search-form" id="mobileSearchForm">
+                    <input type="text" placeholder="Search the site..." class="mobile-search-input" id="mobileSearchInput" autocomplete="off">
+                    <button type="submit" class="mobile-search-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link"><span class="menu-label"><i class="fas fa-home menu-icon"></i> Home</span></a></li>
                     <li class="dropdown">
-                        <a href="about.html" class="nav-link">About Us <i class="fas fa-chevron-down"></i></a>
+                        <a href="about.html" class="nav-link"><span class="menu-label"><i class="fas fa-landmark menu-icon"></i> About Us</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="about.html">About School</a></li>
-                            <li><a href="about.html#founder">Our Founder</a></li>
+                            <li><a href="about.html#founder">Founders &amp; Leadership</a></li>
                             <li><a href="about.html#vision">Vision &amp; Mission</a></li>
                             <li><a href="about.html#principal">Principal's Message</a></li>
                             <li><a href="about.html#administration">Administration</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="departments.html" class="nav-link">Academic Sections <i class="fas fa-chevron-down"></i></a>
+                        <a href="departments.html" class="nav-link"><span class="menu-label"><i class="fas fa-graduation-cap menu-icon"></i> Academic Sections</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="departments.html#preprimary">Pre-Primary (LKG &amp; UKG)</a></li>
                             <li><a href="departments.html#primary">Primary (1st – 5th)</a></li>
@@ -76,16 +93,15 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="academics.html" class="nav-link">Academics <i class="fas fa-chevron-down"></i></a>
+                        <a href="academics.html" class="nav-link"><span class="menu-label"><i class="fas fa-book-open menu-icon"></i> Academics</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="academics.html#courses">Classes &amp; Subjects</a></li>
                             <li><a href="academics.html#calendar">Academic Calendar</a></li>
                             <li><a href="academics.html#examination">Examination</a></li>
-                            <li><a href="academics.html#results">Results</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="activities.html" class="nav-link">Activities <i class="fas fa-chevron-down"></i></a>
+                        <a href="activities.html" class="nav-link"><span class="menu-label"><i class="fas fa-palette menu-icon"></i> Activities</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="activities.html">Activities Overview</a></li>
                             <li><a href="sports-athletics.html">Sports &amp; Athletics</a></li>
@@ -95,7 +111,7 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="facilities.html" class="nav-link">Facilities <i class="fas fa-chevron-down"></i></a>
+                        <a href="facilities.html" class="nav-link"><span class="menu-label"><i class="fas fa-building-columns menu-icon"></i> Facilities</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="facilities.html">School Facilities</a></li>
                             <li><a href="hostel.html">Hostel Facilities</a></li>
@@ -104,7 +120,7 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="admissions.html" class="nav-link">Admissions <i class="fas fa-chevron-down"></i></a>
+                        <a href="admissions.html" class="nav-link"><span class="menu-label"><i class="fas fa-file-signature menu-icon"></i> Admissions</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="admissions.html#process">Admission Process</a></li>
                             <li><a href="admissions.html#fee-structure">Fee Structure</a></li>
@@ -113,18 +129,18 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="nav-link active">Student &amp; Parents <i class="fas fa-chevron-down"></i></a>
+                        <a href="#" class="nav-link active"><span class="menu-label"><i class="fas fa-users menu-icon"></i> Student &amp; Parents</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="placements.html">Student Development</a></li>
-                            <li><a href="achievements.html">Achievements &amp; Awards</a></li>
                             <li><a href="gallery.html">Photo Gallery</a></li>
                             <li><a href="notices.html">Latest Notices</a></li>
-                            <li><a href="student-login.html">Student Portal</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.html" class="nav-link">Contact us</a></li>
+                    <li><a href="contact.html" class="nav-link"><span class="menu-label"><i class="fas fa-phone-alt menu-icon"></i> Contact us</span></a></li>
                 </ul>
-                <div class="nav-actions">
+                
+            </div>
+            <div class="nav-actions">
                     <button class="search-btn" id="searchBtn">
                         <i class="fas fa-search"></i>
                     </button>
@@ -134,237 +150,439 @@
                         <span></span>
                     </button>
                 </div>
-            </div>
         </div>
     </nav>
 
+    <!-- Mobile Menu Backdrop Overlay -->
+    <div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
+
     <!-- Page Header -->
-    <section class="page-header">
-        <div class="header-content">
-            <h1>School Photo Gallery</h1>
+    <section class="page-header"><div class="header-content"><div class="breadcrumb"><a href="index.html">Home</a> / <span>School Photo Gallery</span></div><h1>School Photo Gallery</h1>
             <p>Capturing vibrant moments, academic achievements, sports, &amp; cultural life at Jijamata Public School</p>
         </div>
     </section>
 
-    <!-- Gallery Section -->
+        <!-- Gallery Section -->
+    <style>
+        /* Gallery Reset & Base Variables for Gallery ONLY */
+        
+        .gallery-filter-wrapper {
+            position: relative;
+            padding: 10px 0;
+            display: flex;
+            gap: 14px;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none; /* Firefox */
+            margin-bottom: clamp(24px, 4vw, 40px);
+        }
+        .gallery-filter-wrapper::-webkit-scrollbar {
+            display: none; /* Chrome/Safari */
+        }
+        @media(min-width: 1025px) {
+            .gallery-filter-wrapper {
+                justify-content: center;
+                overflow-x: visible;
+                flex-wrap: wrap;
+            }
+        }
+        
+        .filter-btn {
+            scroll-snap-align: start;
+            flex-shrink: 0;
+            background: var(--surface, #ffffff);
+            border: 1px solid rgba(0,0,0,0.04);
+            color: var(--text-strong);
+            padding: 10px 22px;
+            border-radius: 100px;
+            font-size: 14.5px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+        .filter-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+            border-color: rgba(0,0,0,0.08);
+        }
+        .filter-btn:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+        .filter-btn[aria-pressed="true"] {
+            background: var(--accent);
+            color: var(--on-olive);
+            border-color: var(--accent);
+            box-shadow: 0 6px 18px rgba(107, 122, 58, 0.3);
+            transform: translateY(-1px);
+        }
+        .filter-count {
+            background: var(--bg);
+            color: var(--text-muted);
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 12.5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .filter-btn[aria-pressed="true"] .filter-count {
+            background: rgba(255,255,255,0.25);
+            color: var(--on-olive);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: clamp(14px, 2vw, 24px);
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-inline: clamp(16px, 4vw, 32px);
+        }
+        
+        .gallery-card {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            box-shadow: 0 10px 30px rgba(79,91,42,0.10);
+            transition: transform 600ms ease-out, box-shadow 600ms ease-out, opacity 200ms, scale 200ms;
+            background: var(--bg-alt); /* Shimmer fallback */
+            cursor: pointer;
+            border: none;
+            padding: 0;
+        }
+        .gallery-card:hover {
+            transform: translateY(-4px) !important;
+            box-shadow: 0 15px 40px rgba(79,91,42,0.20) !important;
+        }
+        .gallery-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 600ms ease-out, opacity 500ms;
+            opacity: 1;
+        }
+        .gallery-card:hover img {
+            transform: scale(1.06) !important;
+        }
+        
+        /* Shimmer effect for skeleton */
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+        .gallery-card.loading {
+            background: linear-gradient(90deg, var(--bg-alt) 25%, var(--accent-tint) 50%, var(--bg-alt) 75%);
+            background-size: 200% 100%;
+            animation: shimmer 1.5s infinite;
+        }
+        .gallery-card.loading img {
+            opacity: 0;
+        }
+        
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 40px 16px 16px;
+            background: linear-gradient(to bottom, transparent, rgba(37,35,28,0.72));
+            color: var(--on-olive);
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            opacity: 1;
+            transition: opacity 300ms, transform 300ms;
+            pointer-events: none;
+        }
+        
+        /* Desktop caption slide up */
+        @media (hover: hover) and (pointer: fine) {
+            .gallery-caption {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            .gallery-card:hover .gallery-caption, .gallery-card:focus-within .gallery-caption {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .gallery-category-tag {
+            color: var(--gold, #B8923A);
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+        }
+        .gallery-caption h4 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            margin: 0;
+            color: var(--on-olive);
+        }
+        
+        .expand-icon {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: var(--surface, #ffffff);
+            color: var(--accent-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: opacity 300ms, transform 300ms;
+            pointer-events: none;
+        }
+        .gallery-card:hover .expand-icon, .gallery-card:focus-within .expand-icon {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* Lightbox */
+        .lightbox-modal {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background: rgba(37,35,28,0.92);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 250ms, visibility 250ms;
+        }
+        .lightbox-modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .lightbox-content {
+            position: relative;
+            transform: scale(0.97);
+            transition: transform 250ms;
+            max-width: 90vw;
+            max-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            outline: none;
+        }
+        .lightbox-modal.active .lightbox-content {
+            transform: scale(1);
+        }
+        .lightbox-image {
+            max-width: 90vw;
+            max-height: 75vh;
+            object-fit: contain;
+            border-radius: 16px;
+        }
+        .lightbox-info {
+            margin-top: 16px;
+            text-align: center;
+        }
+        .lightbox-title {
+            color: var(--on-olive);
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+            font-weight: 600;
+        }
+        .lightbox-meta {
+            color: var(--gold, #B8923A);
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        .lightbox-counter {
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--on-olive);
+            font-size: 14px;
+        }
+        .lightbox-controls {
+            position: absolute;
+            top: 50%;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 4vw;
+            transform: translateY(-50%);
+            pointer-events: none;
+        }
+        .lightbox-btn {
+            pointer-events: auto;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--surface, #ffffff);
+            color: var(--text-strong);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            transition: background 150ms;
+        }
+        .lightbox-btn:hover, .lightbox-btn:focus-visible { background: var(--accent-tint); outline: 2px solid var(--accent); }
+        .lightbox-close {
+            position: absolute;
+            top: 24px;
+            right: 24px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            background: var(--surface, #ffffff);
+            color: var(--text-strong);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            z-index: 10000;
+            transition: background 150ms;
+        }
+        .lightbox-close:hover, .lightbox-close:focus-visible { background: var(--accent-tint); outline: 2px solid var(--accent); }
+
+        .load-more-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .load-more-status {
+            color: var(--text-muted);
+            font-size: 14px;
+            margin-bottom: 12px;
+            display: block;
+        }
+        .btn-load-more {
+            background: var(--accent);
+            color: var(--on-olive);
+            border: none;
+            padding: 12px 32px;
+            border-radius: 99px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            min-height: 44px;
+            transition: background 150ms;
+        }
+        .btn-load-more:hover {
+            background: var(--accent-dark);
+        }
+
+        /* Scroll Reveal Animation */
+        .html-js .gallery-card.js-hidden {
+            opacity: 0;
+            transform: translateY(18px);
+        }
+        .html-js .gallery-card.is-revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Prefers Reduced Motion */
+        @media (prefers-reduced-motion: reduce) {
+            .gallery-card, .gallery-card img, .gallery-caption, .expand-icon, .lightbox-modal, .lightbox-content {
+                transition: none !important;
+                transform: none !important;
+            }
+            .html-js .gallery-card.js-hidden {
+                opacity: 1;
+                transform: none;
+            }
+            .gallery-card:hover {
+                transform: none !important;
+            }
+        }
+        
+        
+        
+
+        .closing-strip {
+            text-align: center;
+            padding: 60px 20px;
+            background: var(--bg-alt);
+        }
+        .closing-strip h3 { margin-bottom: 20px; color: var(--text-strong); font-family: var(--font-heading); font-size: 1.8rem; }
+    </style>
+
     <section class="gallery-section">
         <div class="section-container">
             <!-- Filter Buttons -->
-            <div class="gallery-filter-wrapper">
-                <button class="filter-btn active" data-filter="all">All Photos</button>
-                <button class="filter-btn" data-filter="campus">School Campus</button>
-                <button class="filter-btn" data-filter="classroom">Classroom &amp; Learning</button>
-                <button class="filter-btn" data-filter="sports">Sports &amp; Athletics</button>
-                <button class="filter-btn" data-filter="cultural">Cultural Events</button>
-                <button class="filter-btn" data-filter="science">Science Exhibition</button>
-                <button class="filter-btn" data-filter="art">Art &amp; Craft</button>
-                <button class="filter-btn" data-filter="celebration">School Celebrations</button>
-                <button class="filter-btn" data-filter="hostel">Hostel</button>
+            <div class="gallery-filter-wrapper" id="galleryFilterWrapper" role="group" aria-label="Gallery filters">
+                <button class="filter-btn active" data-filter="All" aria-pressed="true">All Photos</button>
+                <button class="filter-btn" data-filter="School Events" aria-pressed="false">School Events</button>
+                <button class="filter-btn" data-filter="Cultural Activities" aria-pressed="false">Cultural Activities</button>
+                <button class="filter-btn" data-filter="Sports & Athletics" aria-pressed="false">Sports & Athletics</button>
+                <button class="filter-btn" data-filter="Academics & Science" aria-pressed="false">Academics & Science</button>
+                <button class="filter-btn" data-filter="Campus & Students" aria-pressed="false">Campus & Students</button>
+                <button class="filter-btn" data-filter="Prize/Award Events" aria-pressed="false">Prize/Award Events</button>
             </div>
 
             <!-- Gallery Grid -->
-            <div class="gallery-grid">
-                <!-- Photo 1: Campus -->
-                <div class="gallery-card" data-category="campus">
-                    <div class="gallery-thumb">
-                        <div class="gallery-thumb-placeholder">
-                            <i class="fas fa-school"></i>
-                            <span>[School Campus Photo]</span>
-                        </div>
-                    </div>
-                    <div class="gallery-caption">
-                        <span class="gallery-category-tag">School Campus</span>
-                        <h4>Main School Building &amp; Entrance</h4>
-                    </div>
-                </div>
-
-                <!-- Photo 2: Classroom -->
-                <div class="gallery-card" data-category="classroom">
-                    <div class="gallery-thumb">
-                        <div class="gallery-thumb-placeholder">
-                            <i class="fas fa-chalkboard-teacher"></i>
-                            <span>[Classroom Photo]</span>
-                        </div>
-                    </div>
-                    <div class="gallery-caption">
-                        <span class="gallery-category-tag">Classroom &amp; Learning</span>
-                        <h4>Interactive Smart Learning Session</h4>
-                    </div>
-                </div>
-
-                <!-- Photo 3: Sports -->
-                <div class="gallery-card" data-category="sports">
-                    <div class="gallery-thumb">
-                        <div class="gallery-thumb-placeholder">
-                            <i class="fas fa-running"></i>
-                            <span>[Sports Photo]</span>
-                        </div>
-                    </div>
-                    <div class="gallery-caption">
-                        <span class="gallery-category-tag">Sports &amp; Athletics</span>
-                        <h4>Annual Sports Meet &amp; Track Events</h4>
-                    </div>
-                </div>
-
-                <!-- Photo 4: Cultural -->
-                <div class="gallery-card" data-category="cultural">
-                    <div class="gallery-thumb">
-                        <div class="gallery-thumb-placeholder">
-                            <i class="fas fa-music"></i>
-                            <span>[Cultural Event Photo]</span>
-                        </div>
-                    </div>
-                    <div class="gallery-caption">
-                        <span class="gallery-category-tag">Cultural Events</span>
-                        <h4>Annual Gathering &amp; Dance Performance</h4>
-                    </div>
-                </div>
-
-                <!-- Photo 5: Science Exhibition -->
-                <div class="gallery-card" data-category="science">
-                    <div class="gallery-thumb">
-                        <div class="gallery-thumb-placeholder">
-                            <i class="fas fa-flask"></i>
-                            <span>[Science Exhibition Photo]</span>
-                        </div>
-                    </div>
-                    <div class="gallery-caption">
-                        <span class="gallery-category-tag">Science Exhibition</span>
-                        <h4>Student Science Models &amp; Projects</h4>
-                    </div>
-                </div>
-
-                <!-- Photo 6: Art & Craft -->
-                <div class="gallery-card" data-category="art">
-                    <div class="gallery-thumb">
-                        <div class="gallery-thumb-placeholder">
-                            <i class="fas fa-palette"></i>
-                            <span>[Art &amp; Craft Photo]</span>
-                        </div>
-                    </div>
-                    <div class="gallery-caption">
-                        <span class="gallery-category-tag">Art &amp; Craft</span>
-                        <h4>Creative Painting &amp; Craft Competition</h4>
-                    </div>
-                </div>
-
-                <!-- Photo 7: Celebrations -->
-                <div class="gallery-card" data-category="celebration">
-                    <div class="gallery-thumb">
-                        <div class="gallery-thumb-placeholder">
-                            <i class="fas fa-flag"></i>
-                            <span>[Independence Day Photo]</span>
-                        </div>
-                    </div>
-                    <div class="gallery-caption">
-                        <span class="gallery-category-tag">School Celebrations</span>
-                        <h4>Independence Day Flag Hoisting &amp; Parade</h4>
-                    </div>
-                </div>
-
-                <!-- Photo 8: Hostel -->
-                <div class="gallery-card" data-category="hostel">
-                    <div class="gallery-thumb">
-                        <div class="gallery-thumb-placeholder">
-                            <i class="fas fa-building"></i>
-                            <span>[Hostel Building Photo]</span>
-                        </div>
-                    </div>
-                    <div class="gallery-caption">
-                        <span class="gallery-category-tag">Hostel</span>
-                        <h4>Hostel Premises &amp; Study Environment</h4>
-                    </div>
-                </div>
-
-                <!-- Photo 9: Classroom Lab -->
-                <div class="gallery-card" data-category="classroom">
-                    <div class="gallery-thumb">
-                        <div class="gallery-thumb-placeholder">
-                            <i class="fas fa-desktop"></i>
-                            <span>[Computer Lab Photo]</span>
-                        </div>
-                    </div>
-                    <div class="gallery-caption">
-                        <span class="gallery-category-tag">Classroom &amp; Learning</span>
-                        <h4>Students Working in Computer Laboratory</h4>
-                    </div>
-                </div>
-
-                <!-- Photo 10: Sports Ground -->
-                <div class="gallery-card" data-category="sports">
-                    <div class="gallery-thumb">
-                        <div class="gallery-thumb-placeholder">
-                            <i class="fas fa-futbol"></i>
-                            <span>[Playground Photo]</span>
-                        </div>
-                    </div>
-                    <div class="gallery-caption">
-                        <span class="gallery-category-tag">Sports &amp; Athletics</span>
-                        <h4>School Sports Ground &amp; Outdoor Games</h4>
-                    </div>
-                </div>
-
-                <!-- Photo 11: Campus Greenery -->
-                <div class="gallery-card" data-category="campus">
-                    <div class="gallery-thumb">
-                        <div class="gallery-thumb-placeholder">
-                            <i class="fas fa-tree"></i>
-                            <span>[Campus Garden Photo]</span>
-                        </div>
-                    </div>
-                    <div class="gallery-caption">
-                        <span class="gallery-category-tag">School Campus</span>
-                        <h4>Green Campus &amp; Eco-Friendly Surroundings</h4>
-                    </div>
-                </div>
-
-                <!-- Photo 12: Celebration -->
-                <div class="gallery-card" data-category="celebration">
-                    <div class="gallery-thumb">
-                        <div class="gallery-thumb-placeholder">
-                            <i class="fas fa-heart"></i>
-                            <span>[Teachers' Day Photo]</span>
-                        </div>
-                    </div>
-                    <div class="gallery-caption">
-                        <span class="gallery-category-tag">School Celebrations</span>
-                        <h4>Teachers' Day Special Function</h4>
-                    </div>
-                </div>
+            <div class="gallery-grid" id="galleryGrid"></div>
+            
+            <div class="load-more-container" id="loadMoreContainer">
+                <span class="load-more-status" id="loadMoreText">Showing 0 of 0 photos</span>
+                <button id="loadMoreBtn" class="btn-load-more">Load More Photos</button>
             </div>
         </div>
     </section>
+    
+    <div class="closing-strip">
+        <h3>Want to see more? Visit the school</h3>
+        <a href="admissions.html" class="btn btn-primary">Enquire for Admission</a>
+    </div>
 
     <!-- Lightbox Modal -->
-    <div class="lightbox-modal" id="lightboxModal">
-        <div class="lightbox-box">
-            <div class="lightbox-header">
-                <h3 id="lightboxTitle">Photo Preview</h3>
-                <button class="lightbox-close" id="lightboxClose">&times;</button>
-            </div>
-            <div class="lightbox-body">
-                <div class="lightbox-display-placeholder">
-                    <i class="fas fa-image"></i>
-                    <span>[Full Resolution School Photo Placeholder]</span>
-                </div>
-                <p id="lightboxCategory" class="gallery-category-tag">Category</p>
-                <p style="color: var(--gray); font-size: 14px; margin-top: 10px;">High resolution photographs of Jijamata Public School will be updated here.</p>
+    <div class="lightbox-modal" id="lightboxModal" role="dialog" aria-modal="true" aria-label="Image gallery fullscreen view" tabindex="-1">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">&times;</button>
+        <div class="lightbox-controls">
+            <button class="lightbox-btn" id="btnPrev" aria-label="Previous image">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </button>
+            <button class="lightbox-btn" id="btnNext" aria-label="Next image">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+        </div>
+        <div class="lightbox-content" tabindex="0">
+            <span class="lightbox-counter" id="lightboxCounter">1 / 1</span>
+            <img src="" alt="" class="lightbox-image" id="lightboxImage">
+            <div class="lightbox-info">
+                <div id="lightboxTitle" class="lightbox-title">Title</div>
+                <div id="lightboxCategory" class="lightbox-meta">Category</div>
             </div>
         </div>
     </div>
 
-    <!-- Floating Action Button -->
-    <a href="admissions.html" class="floating-enquiry-fab" title="Admission Enquiry">
-        <i class="fas fa-paper-plane"></i>
-        <span>Enquire Now</span>
-    </a>
-
-    <!-- Footer -->
+        <!-- Footer -->
     <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-grid">
                 <div class="footer-column">
                     <div class="footer-logo">
+                        <img src="images/logo.png" alt="Jijamata Public School Logo">
                         <i class="fas fa-school"></i>
                         <h3>JIJAMATA PUBLIC SCHOOL</h3>
                     </div>
@@ -373,57 +591,75 @@
                         Nurturing young minds, building strong character, and shaping the future.
                     </p>
                 </div>
-                <div class="footer-column">
+                <div class="footer-column footer-quick-links-col">
                     <h4>Quick Links</h4>
-                    <ul>
+                    <ul class="footer-links-grid">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="about.html">About School</a></li>
                         <li><a href="departments.html">Academic Sections</a></li>
-                        <li><a href="placements.html">Student Development</a></li>
-                        <li><a href="admissions.html">Admissions</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Student &amp; Parent Links</h4>
-                    <ul>
+                        <li><a href="academics.html">Academics &amp; Calendar</a></li>
+                        <li><a href="admissions.html">Admissions 2026–27</a></li>
+                        <li><a href="schemes.html">Government Schemes</a></li>
+                        <li><a href="facilities.html">Campus Facilities</a></li>
+                        <li><a href="activities.html">Student Activities</a></li>
+                        <li><a href="cultural-events.html">Cultural Gathering</a></li>
+                        <li><a href="sports-athletics.html">Sports &amp; Athletics</a></li>
                         <li><a href="gallery.html">Photo Gallery</a></li>
                         <li><a href="notices.html">Latest Notices</a></li>
-                        <li><a href="achievements.html">Achievements</a></li>
                         <li><a href="hostel.html">Hostel Facilities</a></li>
-                        <li><a href="schemes.html">Government Schemes</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h4>Contact Us</h4>
                     <ul class="contact-info">
                         <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Jijamata Public School, Bhenda BK, Ahmednagar, Maharashtra</span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Jijamata+Public+School,+Bhenda+Budruk,+Taluka+Nevasa,+District+Ahilyanagar,+Maharashtra" target="_blank" rel="noopener noreferrer" class="footer-address-link" title="Open Google Maps location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Jijamata Public School, Bhenda Budruk, Taluka Nevasa, District Ahilyanagar, Maharashtra</span>
+                            </a>
                         </li>
                         <li>
                             <i class="fas fa-phone"></i>
-                            <span>[Contact Number]</span>
+                            <span><a href="tel:02427295701">02427295701</a> / <a href="tel:9689684323">9689684323</a></span>
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
-                            <span>[School Email]</span>
+                            <span><a href="mailto:jpsbhenda@gmail.com">jpsbhenda@gmail.com</a></span>
                         </li>
                     </ul>
                     <div class="footer-social">
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        
+                        <a href="https://wa.me/919689684323" target="_blank" rel="noopener noreferrer" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                         <a href="https://youtube.com/@jijamatapublicschool5042?si=lji02YHtw350a3C7" target="_blank" rel="noopener noreferrer" class="social-icon" title="YouTube Channel"><i class="fab fa-youtube"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Jijamata Public School. All Rights Reserved.</p>
-            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Jijamata Public School. All Rights Reserved.</p><a href="#" class="back-to-top">Back to Top <i class="fas fa-arrow-up"></i></a></div>
         </div>
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/gallery-data.js"></script>
+    <script src="js/gallery.js"></script>
+    <!-- Firebase & Dynamic Content -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/dynamic-content.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

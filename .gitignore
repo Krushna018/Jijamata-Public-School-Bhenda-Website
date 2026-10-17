@@ -1,0 +1,21 @@
+# OS Generated Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Editor & IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary & Scratch directories
+scratch/
+.temp/
+*.log

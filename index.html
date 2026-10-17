@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jijamata Public School – LKG to 10th Standard | Bhenda BK, Ahmednagar</title>
     <meta name="description" content="Jijamata Public School, Bhenda BK, Ahmednagar – Providing quality education from LKG to 10th Standard since 2003. Admissions open for 2026–27.">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=20261015_v2">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Top Notice Bar -->
+        <!-- Top Notice Bar -->
     <div class="top-notice-bar">
         <div class="notice-container">
             <div class="notice-left">
@@ -20,20 +20,16 @@
                     <i class="fas fa-bell"></i>
                     <span>NOTICE</span>
                 </div>
-                <span class="notice-text">Admissions Open 2026–27 – Enrol for LKG, UKG, Primary & Secondary Classes (1st – 10th Std)</span>
-                <span class="separator">•</span>
+                <span class="notice-text">
+                    <span class="notice-text-full">Admissions Open – Enrol for LKG, UKG, Primary &amp; Secondary Classes (1st – 10th Std)</span>
+                    <span class="notice-text-short">Admissions Open 2026–27 (LKG to 10th Std)</span>
+                </span>
             </div>
             <div class="notice-right">
-                <span class="highlight">LKG to 10th Std</span>
-                <span class="separator">•</span>
-                <span class="highlight">Est. 2003</span>
-                <span class="separator">•</span>
-                <span class="phone"><i class="fas fa-phone"></i> [Contact Number]</span>
+                <span class="phone"><i class="fas fa-phone"></i> <a href="tel:02427295701" style="color: inherit; text-decoration: none;">02427295701</a><span class="phone-second"> / <a href="tel:9689684323" style="color: inherit; text-decoration: none;">9689684323</a></span></span>
                 <div class="social-icons">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    
+                    <a href="https://wa.me/919689684323" target="_blank" rel="noopener noreferrer" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                     <a href="https://youtube.com/@jijamatapublicschool5042?si=lji02YHtw350a3C7" target="_blank" rel="noopener noreferrer" class="social-icon" title="YouTube Channel"><i class="fab fa-youtube"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
@@ -54,20 +50,40 @@
             </a>
             
             <div class="nav-menu">
-                <ul class="nav-links">
-                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                            <!-- Mobile Drawer Header (Only visible on mobile) -->
+            <div class="mobile-drawer-header">
+                <div class="drawer-title">
+                    <i class="fas fa-bars"></i>
+                    <span>Menu</span>
+                </div>
+                <button type="button" class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close Menu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Drawer Search Bar (Only visible on mobile) -->
+            <div class="mobile-drawer-search">
+                <form class="mobile-search-form" id="mobileSearchForm">
+                    <input type="text" placeholder="Search the site..." class="mobile-search-input" id="mobileSearchInput" autocomplete="off">
+                    <button type="submit" class="mobile-search-btn" aria-label="Search">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+            <ul class="nav-links">
+                    <li><a href="index.html" class="nav-link active"><span class="menu-label"><i class="fas fa-home menu-icon"></i> Home</span></a></li>
                     <li class="dropdown">
-                        <a href="about.html" class="nav-link">About Us <i class="fas fa-chevron-down"></i></a>
+                        <a href="about.html" class="nav-link"><span class="menu-label"><i class="fas fa-landmark menu-icon"></i> About Us</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="about.html">About School</a></li>
-                            <li><a href="about.html#founder">Our Founder</a></li>
+                            <li><a href="about.html#founder">Founders &amp; Leadership</a></li>
                             <li><a href="about.html#vision">Vision &amp; Mission</a></li>
                             <li><a href="about.html#principal">Principal's Message</a></li>
                             <li><a href="about.html#administration">Administration</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="departments.html" class="nav-link">Academic Sections <i class="fas fa-chevron-down"></i></a>
+                        <a href="departments.html" class="nav-link"><span class="menu-label"><i class="fas fa-graduation-cap menu-icon"></i> Academic Sections</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="departments.html#preprimary">Pre-Primary (LKG &amp; UKG)</a></li>
                             <li><a href="departments.html#primary">Primary (1st – 5th)</a></li>
@@ -76,16 +92,15 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="academics.html" class="nav-link">Academics <i class="fas fa-chevron-down"></i></a>
+                        <a href="academics.html" class="nav-link"><span class="menu-label"><i class="fas fa-book-open menu-icon"></i> Academics</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="academics.html#courses">Classes &amp; Subjects</a></li>
                             <li><a href="academics.html#calendar">Academic Calendar</a></li>
                             <li><a href="academics.html#examination">Examination</a></li>
-                            <li><a href="academics.html#results">Results</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="activities.html" class="nav-link">Activities <i class="fas fa-chevron-down"></i></a>
+                        <a href="activities.html" class="nav-link"><span class="menu-label"><i class="fas fa-palette menu-icon"></i> Activities</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="activities.html">Activities Overview</a></li>
                             <li><a href="sports-athletics.html">Sports &amp; Athletics</a></li>
@@ -95,7 +110,7 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="facilities.html" class="nav-link">Facilities <i class="fas fa-chevron-down"></i></a>
+                        <a href="facilities.html" class="nav-link"><span class="menu-label"><i class="fas fa-building-columns menu-icon"></i> Facilities</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="facilities.html">School Facilities</a></li>
                             <li><a href="hostel.html">Hostel Facilities</a></li>
@@ -104,7 +119,7 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="admissions.html" class="nav-link">Admissions <i class="fas fa-chevron-down"></i></a>
+                        <a href="admissions.html" class="nav-link"><span class="menu-label"><i class="fas fa-file-signature menu-icon"></i> Admissions</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="admissions.html#process">Admission Process</a></li>
                             <li><a href="admissions.html#fee-structure">Fee Structure</a></li>
@@ -113,18 +128,18 @@
                         </ul>
                     </li>
                     <li class="dropdown">
-                        <a href="#" class="nav-link">Student &amp; Parents <i class="fas fa-chevron-down"></i></a>
+                        <a href="#" class="nav-link"><span class="menu-label"><i class="fas fa-users menu-icon"></i> Student &amp; Parents</span> <i class="fas fa-chevron-down dropdown-arrow"></i></a>
                         <ul class="dropdown-menu">
                             <li><a href="placements.html">Student Development</a></li>
-                            <li><a href="achievements.html">Achievements &amp; Awards</a></li>
                             <li><a href="gallery.html">Photo Gallery</a></li>
                             <li><a href="notices.html">Latest Notices</a></li>
-                            <li><a href="student-login.html">Student Portal</a></li>
                         </ul>
                     </li>
-                    <li><a href="contact.html" class="nav-link">Contact us</a></li>
+                    <li><a href="contact.html" class="nav-link"><span class="menu-label"><i class="fas fa-phone-alt menu-icon"></i> Contact us</span></a></li>
                 </ul>
-                <div class="nav-actions">
+                
+            </div>
+            <div class="nav-actions">
                     <button class="search-btn" id="searchBtn">
                         <i class="fas fa-search"></i>
                     </button>
@@ -134,9 +149,11 @@
                         <span></span>
                     </button>
                 </div>
-            </div>
         </div>
     </nav>
+
+    <!-- Mobile Menu Backdrop Overlay -->
+    <div class="mobile-menu-backdrop" id="mobileMenuBackdrop"></div>
 
     <!-- Search Modal -->
     <div class="search-modal" id="searchModal">
@@ -146,115 +163,163 @@
                 <i class="fas fa-times"></i>
             </button>
             <div class="search-box">
-                <input type="text" id="searchInput" placeholder="Search classes, notices, events...">
-                <button class="search-submit">
-                    <i class="fas fa-search"></i>
+                <div class="search-input-wrap">
+                    <i class="fas fa-search search-input-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Search fees, admissions, hostel, classes..." autocomplete="off">
+                    <button type="button" class="search-clear-btn" id="searchClearBtn" aria-label="Clear search">
+                        <i class="fas fa-times-circle"></i>
+                    </button>
+                </div>
+                <button class="search-submit" type="button" aria-label="Submit search">
+                    <i class="fas fa-arrow-right"></i>
                 </button>
             </div>
             <div class="search-results" id="searchResults">
-                <p class="search-placeholder">Start typing to search...</p>
             </div>
         </div>
     </div>
 
-    <!-- Hero Section with Carousel -->
+    <!-- Hero Section with Interactive React Carousel -->
     <section class="hero-section">
-        <div class="hero-carousel" id="heroCarousel">
-            <!-- Slide 1 -->
-            <div class="carousel-slide active">
-                <div class="hero-content">
-                    <div class="hero-left">
-                        <div class="hero-badge">
-                            <i class="fas fa-star"></i>
-                            <span>Admissions Open 2026–27</span>
+        <div id="hero-react-root">
+            <div class="hero-carousel" id="heroCarousel">
+                <!-- Slide 1: Our Authentic Campus -->
+                <div class="carousel-slide active">
+                    <div class="hero-content">
+                        <div class="hero-left">
+                            <div class="hero-badge">
+                                <i class="fas fa-star"></i>
+                                <span>Our Authentic Campus</span>
+                            </div>
+                            <div class="hero-copy">
+                                <h1 class="hero-title">
+                                    Experience<br>
+                                    Excellence<br>
+                                    <span class="highlight">at Jijamata</span>
+                                </h1>
+                                <p style="margin-top: 15px; font-size: 1.1rem;  max-width: 440px; line-height: 1.5;">
+                                    State-of-the-art campus infrastructure, spacious classrooms, modern computer lab, and lush sports grounds.
+                                </p>
+                                <div style="margin-top: 25px; display: flex; gap: 15px;">
+                                    <a href="https://wa.me/919689684323?text=Hello%20Jijamata%20Public%20School,%20I%20would%20like%20to%20apply%20for%20admission%20for%20my%20child." target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fab fa-whatsapp" style="font-size: 18px;"></i> Apply Now <i class="fas fa-arrow-right"></i></a>
+                                    <a href="facilities.html" class="btn btn-secondary">Explore Campus</a>
+                                </div>
+                            </div>
                         </div>
-                        <h1 class="hero-title">
-                            Nurturing<br>
-                            Young Minds<br>
-                            <span class="highlight">LKG to 10th Std</span>
-                        </h1>
-                        </div>
-                    <div class="hero-right">
-                        <div class="hero-image-container">
-                            <img src="images/hero1.jpg" alt="Students Learning" class="hero-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'500\' viewBox=\'0 0 400 500\'%3E%3Crect fill=\'%23EEF5FF\' width=\'400\' height=\'500\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'24\' fill=\'%2310294D\'%3EStudents Learning%3C/text%3E%3C/svg%3E'">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Slide 2 -->
-            <div class="carousel-slide">
-                <div class="hero-content">
-                    <div class="hero-left">
-                        <div class="hero-badge">
-                            <i class="fas fa-star"></i>
-                            <span>School Life</span>
-                        </div>
-                        <div class="hero-copy">
-                            <h1 class="hero-title">
-                                Experience<br>
-                                Excellence<br>
-                                <span class="highlight">at Jijamata</span>
-                            </h1>
-                            <div class="hero-cta">
-                                <a href="about.html" class="btn btn-secondary">Explore Our Campus</a>
+                        <div class="hero-right">
+                            <div class="hero-image-container">
+                                <img src="images/poster1.jpg" alt="Jijamata Public School Admission Poster" class="hero-image">
                             </div>
                         </div>
                     </div>
-                    <div class="hero-right">
-                        <div class="hero-image-container">
-                            <img src="images/hero2.jpg" alt="School Life" class="hero-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'500\' viewBox=\'0 0 400 500\'%3E%3Crect fill=\'%23EEF5FF\' width=\'400\' height=\'500\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'24\' fill=\'%2310294D\'%3ESchool Life%3C/text%3E%3C/svg%3E'">
+                </div>
+
+                <!-- Slide 2: Admissions Open -->
+                <div class="carousel-slide">
+                    <div class="hero-content">
+                        <div class="hero-left">
+                            <div class="hero-badge">
+                                <i class="fas fa-star"></i>
+                                <span>Admissions Open</span>
+                            </div>
+                            <h1 class="hero-title">
+                                Nurturing<br>
+                                Young Minds<br>
+                                <span class="highlight">LKG to 10th Std</span>
+                            </h1>
+                            <p style="margin-top: 15px; font-size: 1.1rem;  max-width: 440px; line-height: 1.5;">
+                                Providing nurturing, value-based, and modern education in Bhenda Budruk since 2003.
+                            </p>
+                            <div style="margin-top: 25px; display: flex; gap: 15px;">
+                                <a href="admissions.html" class="btn btn-primary">Enquire Now</a>
+                                <a href="departments.html" class="btn btn-secondary">Academic Sections</a>
+                            </div>
+                        </div>
+                        <div class="hero-right">
+                            <div class="hero-image-container">
+                                <img src="images/admissions-pamphlet.jpg" alt="Admissions Open Pamphlet" class="hero-image" style="object-fit: contain; background: var(--surface);">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Slide 3 -->
-            <div class="carousel-slide">
-                <div class="hero-content">
-                    <div class="hero-left">
-                        <div class="hero-badge">
-                            <i class="fas fa-star"></i>
-                            <span>Admissions Open</span>
+                <!-- Slide 3 -->
+                <div class="carousel-slide">
+                    <div class="hero-content">
+                        <div class="hero-left">
+                            <div class="hero-badge">
+                                <i class="fas fa-star"></i>
+                                <span>Admissions Open</span>
+                            </div>
+                            <h1 class="hero-title">
+                                Shape Your<br>
+                                Child's<br>
+                                <span class="highlight">Future With Us</span>
+                            </h1>
+                            <p style="margin-top: 15px; font-size: 1.1rem;  max-width: 400px; line-height: 1.5;">
+                                Ask us about Free Admission under <strong>RTE</strong> &amp; <strong>Raje Yashwantrao Holkar Schemes</strong>.
+                            </p>
+                            <div style="margin-top: 25px; display: flex; gap: 15px;">
+                                <a href="https://wa.me/919689684323?text=Hello%20Jijamata%20Public%20School,%20I%20would%20like%20to%20apply%20for%20admission%20for%20my%20child." target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fab fa-whatsapp" style="font-size: 18px;"></i> Apply Now <i class="fas fa-arrow-right"></i></a>
+                                <a href="schemes.html" class="btn btn-secondary">Explore Campus</a>
+                            </div>
                         </div>
-                        <h1 class="hero-title">
-                            Shape Your<br>
-                            Child's<br>
-                            <span class="highlight">Future With Us</span>
-                        </h1>
-                        <p style="margin-top: 15px; font-size: 1.1rem; color: rgba(255,255,255,0.9); max-width: 400px; line-height: 1.5;">
-                            Ask us about Free Admission under <strong>RTE</strong> &amp; <strong>Raje Yashwantrao Holkar Schemes</strong>.
-                        </p>
-                        <div style="margin-top: 25px;">
-                            <a href="schemes.html" class="btn btn-secondary">View Admission Schemes</a>
-                        </div>
-                    </div>
-                    <div class="hero-right">
-                        <div class="hero-image-container">
-                            <img src="images/hero3.jpg" alt="Admissions Open" class="hero-image" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'500\' viewBox=\'0 0 400 500\'%3E%3Crect fill=\'%23EEF5FF\' width=\'400\' height=\'500\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'24\' fill=\'%2310294D\'%3EAdmissions Open%3C/text%3E%3C/svg%3E'">
+                        <div class="hero-right">
+                            <div class="hero-image-container">
+                                <img src="images/admissions-pamphlet-marathi.jpg" alt="Admissions Open Marathi Pamphlet" class="hero-image" style="object-fit: contain; background: var(--surface);">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Carousel Controls -->
-            <button class="carousel-control prev" id="prevSlide">
-                <i class="fas fa-chevron-left"></i>
-            </button>
-            <button class="carousel-control next" id="nextSlide">
-                <i class="fas fa-chevron-right"></i>
-            </button>
+                <!-- Slide 4: Founders -->
+                <div class="carousel-slide">
+                    <div class="hero-content">
+                        <div class="hero-left">
+                            <div class="hero-badge">
+                                <i class="fas fa-star"></i>
+                                <span>Honoring Our Founders</span>
+                            </div>
+                            <h1 class="hero-title">
+                                Visionary<br>
+                                Leadership<br>
+                                <span class="highlight">Guiding Our Legacy</span>
+                            </h1>
+                            <p style="margin-top: 15px; font-size: 1.1rem;  max-width: 440px; line-height: 1.5;">
+                                Founded under the inspiring vision of <strong>Loknete Marutrao Ghule Patil</strong> &amp; <strong>Shri Narendraji Ghule Patil</strong>.
+                            </p>
+                            <div style="margin-top: 25px;">
+                                <a href="about.html" class="btn btn-secondary">Read Founders Story</a>
+                            </div>
+                        </div>
+                        <div class="hero-right">
+                            <div class="hero-image-container">
+                                <img src="images/marutraoji-ghule-patil.jpg" alt="Loknete Marutrao Ghule Patil" class="hero-image" style="object-fit: contain; background: var(--bg); padding: 10px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-            <!-- Carousel Indicators -->
-            <div class="carousel-indicators">
-                <button class="indicator active" data-slide="0"></button>
-                <button class="indicator" data-slide="1"></button>
-                <button class="indicator" data-slide="2"></button>
+                <!-- Carousel Controls -->
+                <button class="carousel-control prev" id="prevSlide">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-control next" id="nextSlide">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <button class="indicator active" data-slide="0"></button>
+                    <button class="indicator" data-slide="1"></button>
+                    <button class="indicator" data-slide="2"></button>
+                    <button class="indicator" data-slide="3"></button>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- School Highlights Bar -->
+    <!-- School Highlights Bar (School at a Glance) -->
     <section class="placement-stats-bar">
         <div class="stats-container">
             <div class="stats-header">
@@ -264,20 +329,29 @@
             <div class="stats-grid">
                 <div class="stat-item">
                     <div class="stat-icon">
-                        <i class="fas fa-calendar-alt"></i>
+                        <i class="fas fa-history"></i>
                     </div>
                     <div class="stat-content">
+                        <p class="stat-value stat-number" data-target="23" data-suffix="+ Yrs">0</p>
                         <p class="stat-label">Years of Excellence</p>
-                        <p class="stat-value">23+ Yrs</p>
                     </div>
                 </div>
                 <div class="stat-item">
                     <div class="stat-icon">
-                        <i class="fas fa-users"></i>
+                        <i class="fas fa-user-graduate"></i>
                     </div>
                     <div class="stat-content">
+                        <p class="stat-value stat-number" data-target="800" data-suffix="+">0</p>
                         <p class="stat-label">Students Enrolled</p>
-                        <p class="stat-value">800+ Students</p>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-content">
+                        <p class="stat-value stat-number" data-target="100" data-suffix="%">0</p>
+                        <p class="stat-label">SSC Board Pass Rate</p>
                     </div>
                 </div>
                 <div class="stat-item">
@@ -285,103 +359,762 @@
                         <i class="fas fa-chalkboard-teacher"></i>
                     </div>
                     <div class="stat-content">
-                        <p class="stat-label">Experienced Teachers</p>
-                        <p class="stat-value">30 Qualified Teachers</p>
-                    </div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-icon">
-                        <i class="fas fa-book-open"></i>
-                    </div>
-                    <div class="stat-content">
-                        <p class="stat-label">Classes Offered</p>
-                        <p class="stat-value">LKG – 10th</p>
+                        <p class="stat-value stat-number" data-target="30" data-suffix="+">0</p>
+                        <p class="stat-label">Dedicated Teachers</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Welcome Section -->
+
+    <!-- Why Families Trust Us (Institute Distinctions) -->
     <section class="welcome-section">
         <div class="section-container">
             <div class="section-header">
-                <h2>Welcome to JIJAMATA PUBLIC SCHOOL</h2>
-                <p>Empowering students through quality education, holistic development, and a nurturing environment.</p>
+                <div class="sub-badge-wrapper">
+                    <span class="h-line"></span>
+                    <span class="sub-badge-text">INSTITUTE DISTINCTIONS</span>
+                    <span class="h-line"></span>
+                </div>
+                <h2>Why Families Trust Us</h2>
+                <p>Purely affirmative, proven educational principles that make Jijamata Public School the region's preferred institution.</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-graduation-cap"></i>
+                    <div class="feature-image-wrapper">
+                        <img src="images/Gallery/IMG_20261005_154745.jpg" alt="100% Board Pass Record - Academic excellence and felicitation" class="feature-card-img" style="object-position: center 25%;" loading="lazy">
+                        <span class="card-pill-badge">VERIFIED RESULTS</span>
                     </div>
-                    <h3>Academic Excellence</h3>
-                    <p>A comprehensive, well-structured curriculum from LKG to 10th Standard designed to build strong academic foundations.</p>
-                    <a href="academics.html" class="feature-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <div class="feature-card-body">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>100% Board Pass Record</h3>
+                        <p>Consistent 100% passing record in Maharashtra State Board SSC examinations with outstanding distinction scorers.</p>
+                        <a href="academics.html" class="feature-link">Explore Academics <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-heart"></i>
+                    <div class="feature-image-wrapper">
+                        <img src="images/classroom-study.jpg" alt="Smart Classes &amp; Labs - Students learning in classroom" class="feature-card-img" style="object-position: center 35%;" loading="lazy">
+                        <span class="card-pill-badge">MODERN CAMPUS</span>
                     </div>
-                    <h3>Holistic Development</h3>
-                    <p>We focus on the all-round development of every child — academics, sports, arts, values, and life skills.</p>
-                    <a href="placements.html" class="feature-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <div class="feature-card-body">
+                        <div class="feature-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3>Smart Classes &amp; Labs</h3>
+                        <p>Hands-on Science &amp; Computer laboratories paired with audio-visual smart board teaching.</p>
+                        <a href="facilities.html" class="feature-link">View Facilities <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-futbol"></i>
+                    <div class="feature-image-wrapper">
+                        <img src="images/sports-assembly-drill.jpg" alt="Sports &amp; Holistic Growth - Student mass drill and physical activities on school ground" class="feature-card-img" style="object-position: center 40%;" loading="lazy">
+                        <span class="card-pill-badge">BEYOND ACADEMICS</span>
                     </div>
-                    <h3>Sports &amp; Activities</h3>
-                    <p>Rich co-curricular and sports programmes that build teamwork, discipline, and confidence in students.</p>
-                    <a href="placements.html" class="feature-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <div class="feature-card-body">
+                        <div class="feature-icon">
+                            <i class="fas fa-running"></i>
+                        </div>
+                        <h3>Sports &amp; Holistic Growth</h3>
+                        <p>Comprehensive sports coaching, science exhibitions, cultural gatherings, and personality development programmes.</p>
+                        <a href="activities.html" class="feature-link">See Activities <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-shield-alt"></i>
+                    <div class="feature-image-wrapper">
+                        <img src="images/school-front.jpg" alt="Safe &amp; Disciplined Campus - Jijamata Public School" class="feature-card-img" style="object-position: center 50%;" loading="lazy">
+                        <span class="card-pill-badge">AUDIO-CCTV SECURED</span>
                     </div>
-                    <h3>Safe &amp; Caring Environment</h3>
-                    <p>A safe, inclusive, and supportive campus where every child is respected, valued, and encouraged to grow.</p>
-                    <a href="about.html" class="feature-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <div class="feature-card-body">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Safe &amp; Disciplined Campus</h3>
+                        <p>Continuous CCTV monitoring, secure school bus transport with GPS, and dedicated pastoral student care.</p>
+                        <a href="about.html" class="feature-link">Campus Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Founder Section -->
+    <!-- School Photo Gallery Preview -->
+    <style>
+        .marquee-section {
+            padding: 90px 0;
+            background-color: var(--bg);
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+        }
+        .marquee-header {
+            text-align: center;
+            padding: 0 20px;
+        }
+        .marquee-header h2 {
+            font-family: var(--font-heading);
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            color: var(--text-strong);
+            font-size: clamp(2rem, 4vw, 2.5rem);
+            margin-bottom: 12px;
+        }
+        .marquee-header p {
+            font-family: 'Manrope', 'Inter', sans-serif;
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .mq-wrapper {
+            position: relative;
+            width: 100vw;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: clamp(16px, 2vw, 24px);
+        }
+        
+        .mq-fade-left, .mq-fade-right {
+            position: absolute;
+            top: 0; bottom: 0;
+            width: 8vw;
+            max-width: 120px;
+            z-index: 5;
+            pointer-events: none;
+        }
+        .mq-fade-left {
+            left: 0;
+            background: linear-gradient(to right, var(--bg) 0%, transparent 100%);
+        }
+        .mq-fade-right {
+            right: 0;
+            background: linear-gradient(to left, var(--bg) 0%, transparent 100%);
+        }
+        
+        .mq-row {
+            display: flex;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .mq-track {
+            display: flex;
+            gap: clamp(16px, 2vw, 24px);
+            padding-right: clamp(16px, 2vw, 24px); /* Crucial for seamless loop spacing */
+            width: max-content;
+            will-change: transform;
+        }
+        
+        .mq-track-left { animation: mq-scroll-left 42s linear infinite; }
+        .mq-track-right { animation: mq-scroll-right 48s linear infinite; }
+        
+        .mq-row:hover .mq-track, .mq-row:focus-within .mq-track {
+            animation-play-state: paused;
+        }
+        
+        .mq-item {
+            flex: 0 0 auto;
+            width: clamp(200px, 20vw, 280px);
+            aspect-ratio: 4/3;
+            border-radius: 16px;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            position: relative;
+        }
+        
+        .mq-item:hover, .mq-item:focus-visible {
+            transform: scale(1.04);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+            z-index: 10;
+        }
+        
+        .mq-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+            display: block;
+        }
+        
+        @keyframes mq-scroll-left {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        @keyframes mq-scroll-right {
+            0% { transform: translateX(-50%); }
+            100% { transform: translateX(0); }
+        }
+        
+        @media (prefers-reduced-motion: reduce) {
+            .mq-track { animation-play-state: paused !important; }
+            .mq-item { transition: none; }
+            .mq-item:hover { transform: none; box-shadow: none; }
+        }
+        
+        .mq-action {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .mq-btn {
+            font-family: 'Manrope', 'Inter', sans-serif;
+            font-weight: 600;
+            padding: 14px 36px;
+            border-radius: 100px;
+            background: var(--accent);
+            color: var(--on-olive);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: background 0.3s ease, transform 0.3s ease;
+            text-decoration: none;
+        }
+        .mq-btn:hover {
+            background: var(--accent-dark);
+            transform: translateY(-2px);
+        }
+        
+        /* Reused Lightbox Styles strictly for this section */
+        #idxLightbox {
+            position: fixed;
+            top: 0; left: 0; width: 100vw; height: 100vh;
+            background: rgba(37,35,28,0.92);
+            backdrop-filter: blur(6px);
+            -webkit-backdrop-filter: blur(6px);
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 250ms, visibility 250ms;
+        }
+        #idxLightbox.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        .idx-lb-content {
+            position: relative;
+            transform: scale(0.97);
+            transition: transform 250ms;
+            max-width: 90vw;
+            max-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            outline: none;
+        }
+        #idxLightbox.active .idx-lb-content {
+            transform: scale(1);
+        }
+        .idx-lb-image {
+            max-width: 90vw;
+            max-height: 75vh;
+            object-fit: contain;
+            border-radius: 16px;
+        }
+        .idx-lb-info { margin-top: 16px; text-align: center; }
+        .idx-lb-title { color: var(--on-olive); font-size: 1.1rem; margin-bottom: 4px; font-weight: 600; }
+        .idx-lb-meta { color: var(--gold, #B8923A); font-size: 14px; font-weight: 600; text-transform: uppercase; }
+        .idx-lb-close {
+            position: absolute;
+            top: 24px; right: 24px;
+            width: 48px; height: 48px;
+            border-radius: 50%;
+            background: var(--surface, #ffffff);
+            color: var(--text-strong);
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            z-index: 10000;
+            transition: background 150ms;
+        }
+        .idx-lb-close:hover { background: var(--accent-tint); outline: 2px solid var(--accent); }
+    </style>
+
+    <section class="marquee-section">
+        <div class="marquee-header">
+            <div class="sub-badge-wrapper">
+                <span class="h-line"></span>
+                <span class="sub-badge-text">CAMPUS LIFE &amp; CULTURE</span>
+                <span class="h-line"></span>
+            </div>
+            <h2>Campus Life &amp; Activities Gallery</h2>
+            <p>Moments of joy, learning, sports, and cultural celebrations at Jijamata Public School</p>
+        </div>
+        
+        <div class="mq-wrapper">
+            <div class="mq-fade-left"></div>
+            <div class="mq-fade-right"></div>
+            
+            <div class="mq-row">
+                <div class="mq-track mq-track-left">
+                        <div class="mq-item" tabindex="0" data-title="Staff and guests planting a tree" data-cat="Campus & Students">
+                            <img src="images/gallery/IMG-20261002-WA0002.jpg" alt="Tree planting" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Ceremony honoring a senior guest with a bouquet" data-cat="Prize/Award Events">
+                            <img src="images/gallery/IMG_20261001_145451.jpg" alt="Senior guest with bouquet" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Guests arriving at an event with beautiful rangoli" data-cat="School Events">
+                            <img src="images/gallery/IMG_20261001_145548.jpg" alt="Rangoli" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Flag hoisting ceremony at the school campus" data-cat="School Events">
+                            <img src="images/gallery/IMG_20261001_145628.jpg" alt="Flag hoisting" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Guests and dignitaries on stage during a school function" data-cat="School Events">
+                            <img src="images/gallery/IMG_20261001_145702.jpg" alt="Guests on stage" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Students performing a dance at the Annual School Gathering" data-cat="Cultural Activities">
+                            <img src="images/gallery/IMG_20261001_145732.jpg" alt="Dance at Gathering" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Students presenting a science exhibition model to guests" data-cat="Academics & Science">
+                            <img src="images/gallery/IMG_20261001_145920.jpg" alt="Science exhibition" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Massive crowd of parents and students at a school gathering" data-cat="School Events">
+                            <img src="images/gallery/IMG_20261001_150036.jpg" alt="Massive crowd" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Students marching with house flags" data-cat="Sports & Athletics">
+                            <img src="images/gallery/IMG_20261003_094342.jpg" alt="Marching with house flags" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Female students in scout/guide uniforms standing in line" data-cat="Campus & Students">
+                            <img src="images/gallery/IMG_20261003_094459.jpg" alt="Scout/guide uniforms" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Group of female teachers at a school event" data-cat="School Events">
+                            <img src="images/gallery/IMG_20261003_094720.jpg" alt="Female teachers" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Young students performing a dance on stage" data-cat="Cultural Activities">
+                            <img src="images/gallery/IMG_20261003_095012.jpg" alt="Young students dance" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Students in scout uniforms marching past guests" data-cat="Sports & Athletics">
+                            <img src="images/gallery/IMG_20261005_154513.jpg" alt="Scouts marching" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Staff and students posing under a welcome sign" data-cat="Campus & Students">
+                            <img src="images/gallery/IMG_20261005_154630.jpg" alt="Staff under welcome sign" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Staff and guests saluting the national flag" data-cat="School Events">
+                            <img src="images/gallery/IMG_20261005_155103.jpg" alt="Saluting the flag" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Staff and guests planting a tree" data-cat="Campus & Students">
+                            <img src="images/gallery/IMG-20261002-WA0002.jpg" alt="Tree planting" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Ceremony honoring a senior guest with a bouquet" data-cat="Prize/Award Events">
+                            <img src="images/gallery/IMG_20261001_145451.jpg" alt="Senior guest with bouquet" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Guests arriving at an event with beautiful rangoli" data-cat="School Events">
+                            <img src="images/gallery/IMG_20261001_145548.jpg" alt="Rangoli" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Flag hoisting ceremony at the school campus" data-cat="School Events">
+                            <img src="images/gallery/IMG_20261001_145628.jpg" alt="Flag hoisting" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Guests and dignitaries on stage during a school function" data-cat="School Events">
+                            <img src="images/gallery/IMG_20261001_145702.jpg" alt="Guests on stage" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Students performing a dance at the Annual School Gathering" data-cat="Cultural Activities">
+                            <img src="images/gallery/IMG_20261001_145732.jpg" alt="Dance at Gathering" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Students presenting a science exhibition model to guests" data-cat="Academics & Science">
+                            <img src="images/gallery/IMG_20261001_145920.jpg" alt="Science exhibition" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Massive crowd of parents and students at a school gathering" data-cat="School Events">
+                            <img src="images/gallery/IMG_20261001_150036.jpg" alt="Massive crowd" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Students marching with house flags" data-cat="Sports & Athletics">
+                            <img src="images/gallery/IMG_20261003_094342.jpg" alt="Marching with house flags" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Female students in scout/guide uniforms standing in line" data-cat="Campus & Students">
+                            <img src="images/gallery/IMG_20261003_094459.jpg" alt="Scout/guide uniforms" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Group of female teachers at a school event" data-cat="School Events">
+                            <img src="images/gallery/IMG_20261003_094720.jpg" alt="Female teachers" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Young students performing a dance on stage" data-cat="Cultural Activities">
+                            <img src="images/gallery/IMG_20261003_095012.jpg" alt="Young students dance" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Students in scout uniforms marching past guests" data-cat="Sports & Athletics">
+                            <img src="images/gallery/IMG_20261005_154513.jpg" alt="Scouts marching" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Staff and students posing under a welcome sign" data-cat="Campus & Students">
+                            <img src="images/gallery/IMG_20261005_154630.jpg" alt="Staff under welcome sign" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Staff and guests saluting the national flag" data-cat="School Events">
+                            <img src="images/gallery/IMG_20261005_155103.jpg" alt="Saluting the flag" loading="lazy">
+                        </div>
+                </div>
+            </div>
+            
+            <div class="mq-row">
+                <div class="mq-track mq-track-right">
+                        <div class="mq-item" tabindex="0" data-title="Students seated attentively in a classroom" data-cat="Academics & Science">
+                            <img src="images/gallery/IMG-20261002-WA0003.jpg" alt="Classroom" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Guest shaking hands with a student athlete" data-cat="Sports & Athletics">
+                            <img src="images/gallery/IMG-20261002-WA0007.jpg" alt="Sports handshake" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Children dressed as historical and deity figures" data-cat="Cultural Activities">
+                            <img src="images/gallery/IMG_20261001_145509.jpg" alt="Cultural costumes" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Cultural procession featuring students in traditional attire" data-cat="Cultural Activities">
+                            <img src="images/gallery/IMG_20261001_145649.jpg" alt="Cultural procession" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Guests inspecting a large register or record book" data-cat="School Events">
+                            <img src="images/gallery/IMG_20261001_145717.jpg" alt="Register inspection" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="A young student in traditional dress walking with guests" data-cat="Cultural Activities">
+                            <img src="images/gallery/IMG_20261001_145952.jpg" alt="Traditional dress" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Large audience seated under a tent for a school event" data-cat="School Events">
+                            <img src="images/gallery/IMG_20261001_150223.jpg" alt="Audience in tent" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Student presenting a flower bouquet to the chief guest" data-cat="Prize/Award Events">
+                            <img src="images/gallery/IMG_20261001_150423.jpg" alt="Bouquet to guest" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Young children saluting in military and police costumes" data-cat="Cultural Activities">
+                            <img src="images/gallery/IMG_20261003_094234.jpg" alt="Saluting children" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Chief guest arriving and greeting the school staff" data-cat="School Events">
+                            <img src="images/gallery/IMG_20261003_094407.jpg" alt="Chief guest arrival" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Guest presenting a bouquet to a senior dignitary" data-cat="Prize/Award Events">
+                            <img src="images/gallery/IMG_20261003_094848.jpg" alt="Bouquet presentation" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Students presenting a synchronized dance performance" data-cat="Cultural Activities">
+                            <img src="images/gallery/IMG_20261005_154451.jpg" alt="Synchronized dance" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Guests inspecting a student science exhibition model" data-cat="Academics & Science">
+                            <img src="images/gallery/IMG_20261005_154809.jpg" alt="Science exhibition 2" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Students performing a traditional Lezim dance" data-cat="Cultural Activities">
+                            <img src="images/gallery/IMG_20261005_155116.jpg" alt="Lezim dance" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Scouts and guides performing a parade march" data-cat="Sports & Athletics">
+                            <img src="images/gallery/IMG_20261005_155151.jpg" alt="Parade march" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Students seated attentively in a classroom" data-cat="Academics & Science">
+                            <img src="images/gallery/IMG-20261002-WA0003.jpg" alt="Classroom" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Guest shaking hands with a student athlete" data-cat="Sports & Athletics">
+                            <img src="images/gallery/IMG-20261002-WA0007.jpg" alt="Sports handshake" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Children dressed as historical and deity figures" data-cat="Cultural Activities">
+                            <img src="images/gallery/IMG_20261001_145509.jpg" alt="Cultural costumes" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Cultural procession featuring students in traditional attire" data-cat="Cultural Activities">
+                            <img src="images/gallery/IMG_20261001_145649.jpg" alt="Cultural procession" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Guests inspecting a large register or record book" data-cat="School Events">
+                            <img src="images/gallery/IMG_20261001_145717.jpg" alt="Register inspection" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="A young student in traditional dress walking with guests" data-cat="Cultural Activities">
+                            <img src="images/gallery/IMG_20261001_145952.jpg" alt="Traditional dress" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Large audience seated under a tent for a school event" data-cat="School Events">
+                            <img src="images/gallery/IMG_20261001_150223.jpg" alt="Audience in tent" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Student presenting a flower bouquet to the chief guest" data-cat="Prize/Award Events">
+                            <img src="images/gallery/IMG_20261001_150423.jpg" alt="Bouquet to guest" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Young children saluting in military and police costumes" data-cat="Cultural Activities">
+                            <img src="images/gallery/IMG_20261003_094234.jpg" alt="Saluting children" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Chief guest arriving and greeting the school staff" data-cat="School Events">
+                            <img src="images/gallery/IMG_20261003_094407.jpg" alt="Chief guest arrival" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Guest presenting a bouquet to a senior dignitary" data-cat="Prize/Award Events">
+                            <img src="images/gallery/IMG_20261003_094848.jpg" alt="Bouquet presentation" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Students presenting a synchronized dance performance" data-cat="Cultural Activities">
+                            <img src="images/gallery/IMG_20261005_154451.jpg" alt="Synchronized dance" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Guests inspecting a student science exhibition model" data-cat="Academics & Science">
+                            <img src="images/gallery/IMG_20261005_154809.jpg" alt="Science exhibition 2" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Students performing a traditional Lezim dance" data-cat="Cultural Activities">
+                            <img src="images/gallery/IMG_20261005_155116.jpg" alt="Lezim dance" loading="lazy">
+                        </div>
+                        <div class="mq-item" tabindex="0" data-title="Scouts and guides performing a parade march" data-cat="Sports & Athletics">
+                            <img src="images/gallery/IMG_20261005_155151.jpg" alt="Parade march" loading="lazy">
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mq-action">
+            <a href="gallery.html" class="mq-btn">View Full Gallery <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div id="idxLightbox" role="dialog" aria-modal="true" aria-label="Image gallery fullscreen view">
+            <button class="idx-lb-close" id="idxLbClose" aria-label="Close lightbox">&times;</button>
+            <div class="idx-lb-content" tabindex="0">
+                <img src="" alt="" class="idx-lb-image" id="idxLbImg">
+                <div class="idx-lb-info">
+                    <div id="idxLbTitle" class="idx-lb-title">Title</div>
+                    <div id="idxLbCat" class="idx-lb-meta">Category</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const lb = document.getElementById('idxLightbox');
+            const lbImg = document.getElementById('idxLbImg');
+            const lbTitle = document.getElementById('idxLbTitle');
+            const lbCat = document.getElementById('idxLbCat');
+            const btnClose = document.getElementById('idxLbClose');
+            
+            if (!lb) return;
+
+            document.querySelectorAll('.mq-item').forEach(item => {
+                item.addEventListener('click', () => {
+                    const img = item.querySelector('img');
+                    lbImg.src = img.src;
+                    lbImg.alt = img.alt;
+                    lbTitle.textContent = item.dataset.title;
+                    lbCat.textContent = item.dataset.cat;
+                    lb.classList.add('active');
+                });
+                item.addEventListener('keydown', (e) => {
+                    if(e.key === 'Enter') item.click();
+                });
+            });
+
+            const closeLb = () => {
+                lb.classList.remove('active');
+                setTimeout(() => { lbImg.src = ''; }, 300);
+            };
+
+            btnClose.addEventListener('click', closeLb);
+            lb.addEventListener('click', (e) => {
+                if(e.target === lb) closeLb();
+            });
+            document.addEventListener('keydown', (e) => {
+                if(e.key === 'Escape' && lb.classList.contains('active')) closeLb();
+            });
+        });
+    </script>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="section-container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/campus.jpg" alt="Jijamata Public School Campus" class="about-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect fill=\'%23EEF5FF\' width=\'600\' height=\'400\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'28\' fill=\'%2310294D\'%3ESchool Building%3C/text%3E%3C/svg%3E'">
+                </div>
+                <div class="about-text">
+                    <div class="sub-badge-wrapper">
+                        <span class="h-line"></span>
+                        <span class="sub-badge-text">ABOUT JIJAMATA</span>
+                        <span class="h-line"></span>
+                    </div>
+                    <h2>About JIJAMATA PUBLIC SCHOOL</h2>
+                    <p>
+                        Established in 2003, Jijamata Public School has been a trusted centre of quality education 
+                        in Bhenda BK, Ahmednagar, Maharashtra. With over two decades of dedicated service, 
+                        we have shaped the lives of thousands of students who are now making a positive difference in society.
+                    </p>
+                    <p>
+                        Our school offers education from LKG to 10th Standard in a caring, disciplined, and stimulating 
+                        environment. We focus on academic excellence, character building, sports, and co-curricular activities 
+                        to ensure every child reaches their full potential.
+                    </p>
+                    <a href="about.html" class="btn btn-primary">Explore More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founders & Leadership Section -->
     <section id="founder" class="founder-section">
         <div class="section-container">
             <div class="section-header">
-                <h2>Our Founder</h2>
-                <p>The visionary leader guiding Jijamata Public School towards educational excellence</p>
-            </div>
-            <div class="founder-grid">
-                <div class="founder-image-wrapper">
-                    <div class="founder-photo-placeholder">
-                        <i class="fas fa-user-tie"></i>
-                        <span>[Founder Photo]</span>
-                    </div>
-                    <div class="founder-badge">Founder of Jijamata Public School</div>
+                <div class="sub-badge-wrapper">
+                    <span class="h-line"></span>
+                    <span class="sub-badge-text">LEADERSHIP &amp; VISION</span>
+                    <span class="h-line"></span>
                 </div>
-                <div class="founder-info">
-                    <h3>[Founder Name]</h3>
-                    <span class="founder-role">Founder &amp; Guidance</span>
-                    <p class="founder-bio">
-                        [Founder Biography] Established in 2003, Jijamata Public School stands as a premier institution 
-                        in Bhenda BK, Ahmednagar. Under the guidance of [Founder Name], the school continues to nurture 
-                        values, knowledge, discipline, and confidence in every student from LKG to 10th Standard.
-                    </p>
-                    <div class="founder-quote-box">
-                        <i class="fas fa-quote-left" style="color: var(--accent-orange); margin-bottom: 8px; font-size: 18px;"></i>
-                        <p>"Nurturing strong character, curiosity, and academic excellence in every child."</p>
+                <h2>Founders &amp; Leadership</h2>
+                <p>Visionary leaders guiding Jijamata Public School towards educational excellence</p>
+            </div>
+            <div class="founder-cards-grid">
+                <!-- Founder 1: Marutraoji Ghule Patil -->
+                <div class="founder-card">
+                    <div class="founder-img-container">
+                        <img src="images/marutraoji-ghule-patil.jpg" alt="Marutraoji Ghule Patil" class="founder-img">
+                    </div>
+                    <div class="founder-card-content">
+                        <div class="founder-badge">Founder &amp; Visionary</div>
+                        <h3>Shri Marutraoji Ghule Patil</h3>
+                        <span class="founder-aka">Loknete Marutrao Ghule Patil</span>
+                        <p class="founder-bio">
+                            Established under his inspiring vision and leadership in 2003, Jijamata Public School was founded to bring quality, value-based education and holistic development to students in Bhenda Budruk and the surrounding region.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Founder 2: Narendra Ghule Patil -->
+                <div class="founder-card">
+                    <div class="founder-img-container">
+                        <img src="images/narendra-ghule-patil.jpg" alt="Narendra Ghule Patil" class="founder-img">
+                    </div>
+                    <div class="founder-card-content">
+                        <div class="founder-badge">Leadership &amp; Management</div>
+                        <h3>Shri Narendraji Ghule Patil</h3>
+                        <span class="founder-aka">Management &amp; Leadership</span>
+                        <p class="founder-bio">
+                            Providing dedicated leadership, guidance, and continuous support to foster academic excellence, character building, and overall growth for all students from LKG to 10th Standard.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Parent Information Quick Access -->
-    <section class="parent-info-section">
+
+<!-- Academic Sections (Programs & Batches) -->
+    <section class="programs-section">
         <div class="section-container">
             <div class="section-header">
+                <div class="sub-badge-wrapper">
+                    <span class="h-line"></span>
+                    <span class="sub-badge-text">ACADEMIC PATHWAY</span>
+                    <span class="h-line"></span>
+                </div>
+                <h2>Our Academic Sections</h2>
+                <p>Structured, comprehensive education tailored for every developmental stage from LKG to 10th Standard.</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Pre-Primary</h3>
+                    <p>LKG &amp; UKG – Play-based, activity-driven learning that sparks curiosity and builds foundational communication and motor skills.</p>
+                    <a href="departments.html#preprimary" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <h3>Primary Section</h3>
+                    <p>Classes 1st – 5th – Building strong literacy, numeracy, and scientific thinking skills through engaging experiential teaching methods.</p>
+                    <a href="departments.html#primary" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Middle School</h3>
+                    <p>Classes 6th – 8th – Deepening subject knowledge, conceptual depth, computer literacy, and preparing students for higher studies.</p>
+                    <a href="departments.html#middle" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Secondary Section</h3>
+                    <p>Classes 9th – 10th – Rigorous SSC Board preparation with subject experts, lab practicals, test series, and personalized mentor guidance.</p>
+                    <a href="departments.html#secondary" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Campus Infrastructure & Facilities Section -->
+    <section id="facilities" class="facilities-showcase-section">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="sub-badge-wrapper">
+                    <span class="h-line"></span>
+                    <span class="sub-badge-text">WORLD-CLASS CAMPUS</span>
+                    <span class="h-line"></span>
+                </div>
+                <h2>Campus Infrastructure &amp; Facilities</h2>
+                <p>Purpose-built learning spaces designed to support academic brilliance, physical health, and creative expression.</p>
+            </div>
+            <div class="facility-showcase-grid">
+                <!-- 1. Spacious Classrooms -->
+                <div class="facility-showcase-card">
+                    <div class="facility-showcase-img-wrap">
+                        <img src="images/gallery/IMG-20261002-WA0003.jpg" alt="Spacious Classrooms at Jijamata Public School" style="object-position: center 35%;" loading="lazy">
+                        <div class="facility-showcase-icon-badge"><i class="fas fa-chalkboard-teacher"></i></div>
+                    </div>
+                    <div class="facility-showcase-content">
+                        <span class="card-pill-badge">ACADEMIC LEARNING</span>
+                        <h3>Spacious Classrooms</h3>
+                        <p>Well-lit, airy classrooms equipped with student desks, informative charts, and an encouraging learning atmosphere.</p>
+                        <a href="facilities.html" class="feature-link">Explore Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 2. Playground & Sports Complex -->
+                <div class="facility-showcase-card">
+                    <div class="facility-showcase-img-wrap">
+                        <img src="images/gallery/IMG_20261003_094342.jpg" alt="Playground &amp; Sports Ground at Jijamata Public School" style="object-position: center 40%;" loading="lazy">
+                        <div class="facility-showcase-icon-badge"><i class="fas fa-running"></i></div>
+                    </div>
+                    <div class="facility-showcase-content">
+                        <span class="card-pill-badge">SPORTS &amp; ATHLETICS</span>
+                        <h3>Playground &amp; Sports</h3>
+                        <p>Expansive outdoor sports grounds and running tracks supporting team games, athletics, physical drills, and sports meets.</p>
+                        <a href="facilities.html" class="feature-link">Explore Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 3. Yoga & Physical Fitness Arena -->
+                <div class="facility-showcase-card">
+                    <div class="facility-showcase-img-wrap">
+                        <img src="images/gallery/IMG_20261005_155136.jpg" alt="Yoga &amp; Physical Fitness Arena at Jijamata Public School" style="object-position: center 40%;" loading="lazy">
+                        <div class="facility-showcase-icon-badge"><i class="fas fa-spa"></i></div>
+                    </div>
+                    <div class="facility-showcase-content">
+                        <span class="card-pill-badge">HEALTH &amp; WELLNESS</span>
+                        <h3>Yoga &amp; Fitness Arena</h3>
+                        <p>Dedicated open grounds for daily morning assemblies, mass physical training (PT), yoga sessions, and student wellness.</p>
+                        <a href="facilities.html" class="feature-link">Explore Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- 4. Lush Green Eco-Campus -->
+                <div class="facility-showcase-card">
+                    <div class="facility-showcase-img-wrap">
+                        <img src="images/gallery/IMG-20261002-WA0002.jpg" alt="Lush Green Campus at Jijamata Public School" style="object-position: center 45%;" loading="lazy">
+                        <div class="facility-showcase-icon-badge"><i class="fas fa-seedling"></i></div>
+                    </div>
+                    <div class="facility-showcase-content">
+                        <span class="card-pill-badge">ECO-FRIENDLY CAMPUS</span>
+                        <h3>Lush Green Campus</h3>
+                        <p>Serene, tree-lined green campus promoting clean fresh air, nature-friendly learning, regular plantation drives, and student well-being.</p>
+                        <a href="facilities.html" class="feature-link">Explore Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <a href="facilities.html" class="btn btn-secondary">Explore All Campus Facilities <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+<section class="parent-info-section">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="sub-badge-wrapper">
+                    <span class="h-line"></span>
+                    <span class="sub-badge-text">PARENT RESOURCES</span>
+                    <span class="h-line"></span>
+                </div>
                 <h2>Parent Information &amp; Quick Access</h2>
                 <p>Essential resources, admission details, fee structures, &amp; notices for parents</p>
             </div>
@@ -443,157 +1176,151 @@
         </div>
     </section>
 
-    <!-- School Photo Gallery Preview -->
-    <section class="gallery-section">
+    <!-- Our Successful Alumni Section -->
+    <section id="alumni" class="alumni-section">
         <div class="section-container">
             <div class="section-header">
-                <h2>Campus Life &amp; Activities Gallery</h2>
-                <p>Moments of joy, learning, sports, and cultural celebrations at Jijamata Public School</p>
+                <div class="sub-badge-wrapper">
+                    <span class="h-line"></span>
+                    <span class="sub-badge-text">OUR SUCCESSFUL ALUMNI</span>
+                    <span class="h-line"></span>
+                </div>
+                <h2>Our Little Champs, Big Achievements</h2>
+                <p>Celebrating our proud former students who began their educational journey at Jijamata Public School and are now excelling in prestigious universities and premier professional institutions worldwide.</p>
             </div>
-            
-            <div class="gallery-grid" style="margin-bottom: 30px;">
-                <div class="gallery-card">
-                    <div class="gallery-thumb">
-                        <div class="gallery-thumb-placeholder">
-                            <i class="fas fa-school"></i>
-                            <span>[School Campus Photo]</span>
+            <div class="alumni-grid">
+                <!-- 1. Mast. Chaitanya Tekane -->
+                <div class="alumni-card" data-alumni-index="0" role="button" tabindex="0" aria-haspopup="dialog" title="Click to view inspiring story">
+                    <div class="alumni-card-banner"></div>
+                    <div class="alumni-avatar-wrap">
+                        <img src="images/alumni/chaitanya-tekane.jpg" alt="Mast. Chaitanya Tekane" class="alumni-avatar" loading="lazy">
+                        <span class="alumni-badge-pin" title="International Studies"><i class="fas fa-globe"></i></span>
+                    </div>
+                    <div class="alumni-card-content">
+                        <span class="alumni-achievement-pill global"><i class="fas fa-graduation-cap"></i> MS, Canada</span>
+                        <h3 class="alumni-name">Mast. Chaitanya Tekane</h3>
+                        <p class="alumni-role">Master of Science &bull; Canada</p>
+                        <div class="alumni-footer">
+                            <span><i class="fas fa-award"></i> JPS Alumnus</span>
+                            <span class="alumni-view-story">View Story <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
-                    <div class="gallery-caption">
-                        <span class="gallery-category-tag">Campus</span>
-                        <h4>Main School Building</h4>
-                    </div>
                 </div>
 
-                <div class="gallery-card">
-                    <div class="gallery-thumb">
-                        <div class="gallery-thumb-placeholder">
-                            <i class="fas fa-chalkboard-teacher"></i>
-                            <span>[Classroom Photo]</span>
+                <!-- 2. Mast. Sanket Gaikwad -->
+                <div class="alumni-card" data-alumni-index="1" role="button" tabindex="0" aria-haspopup="dialog" title="Click to view inspiring story">
+                    <div class="alumni-card-banner"></div>
+                    <div class="alumni-avatar-wrap">
+                        <img src="images/alumni/sanket-gaikwad.jpg" alt="Mast. Sanket Gaikwad" class="alumni-avatar" loading="lazy">
+                        <span class="alumni-badge-pin pin-iit" title="IITian"><i class="fas fa-university"></i></span>
+                    </div>
+                    <div class="alumni-card-content">
+                        <span class="alumni-achievement-pill iit"><i class="fas fa-landmark"></i> IIT Roorkee</span>
+                        <h3 class="alumni-name">Mast. Sanket Gaikwad</h3>
+                        <p class="alumni-role">Indian Institute of Technology</p>
+                        <div class="alumni-footer">
+                            <span><i class="fas fa-award"></i> JPS Alumnus</span>
+                            <span class="alumni-view-story">View Story <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
-                    <div class="gallery-caption">
-                        <span class="gallery-category-tag">Classroom</span>
-                        <h4>Interactive Smart Learning</h4>
-                    </div>
                 </div>
 
-                <div class="gallery-card">
-                    <div class="gallery-thumb">
-                        <div class="gallery-thumb-placeholder">
-                            <i class="fas fa-running"></i>
-                            <span>[Sports Photo]</span>
+                <!-- 3. Mast. Vinay Khatik -->
+                <div class="alumni-card" data-alumni-index="2" role="button" tabindex="0" aria-haspopup="dialog" title="Click to view inspiring story">
+                    <div class="alumni-card-banner"></div>
+                    <div class="alumni-avatar-wrap">
+                        <img src="images/alumni/vinay-khatik.jpg" alt="Mast. Vinay Khatik" class="alumni-avatar" loading="lazy">
+                        <span class="alumni-badge-pin pin-med" title="Medical Sciences"><i class="fas fa-stethoscope"></i></span>
+                    </div>
+                    <div class="alumni-card-content">
+                        <span class="alumni-achievement-pill mbbs"><i class="fas fa-user-md"></i> MBBS</span>
+                        <h3 class="alumni-name">Mast. Vinay Khatik</h3>
+                        <p class="alumni-role">Bachelor of Medicine &amp; Surgery</p>
+                        <div class="alumni-footer">
+                            <span><i class="fas fa-award"></i> JPS Alumnus</span>
+                            <span class="alumni-view-story">View Story <i class="fas fa-arrow-right"></i></span>
                         </div>
                     </div>
-                    <div class="gallery-caption">
-                        <span class="gallery-category-tag">Sports</span>
-                        <h4>Annual Sports Meet</h4>
+                </div>
+
+                <!-- 4. Mast. Anway Pawar -->
+                <div class="alumni-card" data-alumni-index="3" role="button" tabindex="0" aria-haspopup="dialog" title="Click to view inspiring story">
+                    <div class="alumni-card-banner"></div>
+                    <div class="alumni-avatar-wrap">
+                        <img src="images/alumni/anway-pawar-square.jpg" alt="Mast. Anway Pawar" class="alumni-avatar" loading="lazy">
+                        <span class="alumni-badge-pin" title="International Studies"><i class="fas fa-globe-americas"></i></span>
+                    </div>
+                    <div class="alumni-card-content">
+                        <span class="alumni-achievement-pill global"><i class="fas fa-graduation-cap"></i> MS, USA</span>
+                        <h3 class="alumni-name">Mast. Anway Pawar</h3>
+                        <p class="alumni-role">Master of Science &bull; USA</p>
+                        <div class="alumni-footer">
+                            <span><i class="fas fa-award"></i> JPS Alumnus</span>
+                            <span class="alumni-view-story">View Story <i class="fas fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Ms. Ashwini Tupe -->
+                <div class="alumni-card" data-alumni-index="4" role="button" tabindex="0" aria-haspopup="dialog" title="Click to view inspiring story">
+                    <div class="alumni-card-banner"></div>
+                    <div class="alumni-avatar-wrap">
+                        <img src="images/alumni/ashwini-tupe-square.jpg" alt="Ms. Ashwini Tupe" class="alumni-avatar" loading="lazy">
+                        <span class="alumni-badge-pin pin-med" title="Medical Sciences"><i class="fas fa-stethoscope"></i></span>
+                    </div>
+                    <div class="alumni-card-content">
+                        <span class="alumni-achievement-pill mbbs"><i class="fas fa-user-md"></i> MBBS</span>
+                        <h3 class="alumni-name">Ms. Ashwini Tupe</h3>
+                        <p class="alumni-role">Bachelor of Medicine &amp; Surgery</p>
+                        <div class="alumni-footer">
+                            <span><i class="fas fa-award"></i> JPS Alumna</span>
+                            <span class="alumni-view-story">View Story <i class="fas fa-arrow-right"></i></span>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div style="text-align: center;">
-                <a href="gallery.html" class="btn btn-primary" style="padding: 12px 30px; border-radius: 25px;">Explore Full Photo Gallery <i class="fas fa-arrow-right" style="margin-left: 8px;"></i></a>
+            <div style="text-align: center; margin-top: 32px;">
+                <a href="gallery.html" class="btn btn-secondary">Explore Photo Gallery <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section class="about-section">
-        <div class="section-container">
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="images/campus.jpg" alt="Jijamata Public School Campus" class="about-img" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'600\' height=\'400\' viewBox=\'0 0 600 400\'%3E%3Crect fill=\'%23EEF5FF\' width=\'600\' height=\'400\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'28\' fill=\'%2310294D\'%3ESchool Building%3C/text%3E%3C/svg%3E'">
+        <!-- Alumni Inspiring Story Modal Popup -->
+        <div class="alumni-modal-backdrop" id="alumniModalBackdrop" aria-hidden="true">
+            <div class="alumni-modal" id="alumniModal" role="dialog" aria-modal="true" aria-labelledby="alumniModalName">
+                <button type="button" class="alumni-modal-close" id="alumniModalClose" aria-label="Close story popup">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="alumni-modal-banner">
+                    <span class="alumni-modal-hall-badge"><i class="fas fa-star"></i> JPS Hall of Fame</span>
                 </div>
-                <div class="about-text">
-                    <h2>About JIJAMATA PUBLIC SCHOOL</h2>
-                    <p>
-                        Established in 2003, Jijamata Public School has been a trusted centre of quality education 
-                        in Bhenda BK, Ahmednagar, Maharashtra. With over two decades of dedicated service, 
-                        we have shaped the lives of thousands of students who are now making a positive difference in society.
-                    </p>
-                    <p>
-                        Our school offers education from LKG to 10th Standard in a caring, disciplined, and stimulating 
-                        environment. We focus on academic excellence, character building, sports, and co-curricular activities 
-                        to ensure every child reaches their full potential.
-                    </p>
-                    <a href="about.html" class="btn btn-primary">Explore More <i class="fas fa-arrow-right"></i></a>
+                <div class="alumni-modal-avatar-wrap">
+                    <img src="images/alumni/chaitanya-tekane.jpg" alt="Alumni Portrait" class="alumni-modal-avatar" id="alumniModalImg">
+                    <span class="alumni-modal-pin" id="alumniModalPin">
+                        <i class="fas fa-graduation-cap"></i>
+                    </span>
                 </div>
-            </div>
-        </div>
-    </section>
+                <div class="alumni-modal-body">
+                    <div class="alumni-modal-pill-wrap">
+                        <span class="alumni-achievement-pill global" id="alumniModalPill">
+                            <i class="fas fa-award" id="alumniModalPillIcon"></i> <span id="alumniModalPillText">MS, Canada</span>
+                        </span>
+                    </div>
+                    <h3 class="alumni-modal-name" id="alumniModalName">Mast. Chaitanya Tekane</h3>
+                    <p class="alumni-modal-subtitle" id="alumniModalSubtitle">Master of Science &bull; Canada</p>
+                    
+                    <div class="alumni-modal-quote-box">
+                        <i class="fas fa-quote-left quote-mark"></i>
+                        <p class="alumni-modal-message" id="alumniModalMessage">
+                            The strong scientific foundation and curiosity nurtured in me at Jijamata Public School gave me the confidence to pursue my MS in Canada. JPS taught me to dream without boundaries, work relentlessly, and achieve global excellence!
+                        </p>
+                    </div>
 
-    <!-- Academic Sections -->
-    <section class="programs-section">
-        <div class="section-container">
-            <div class="section-header">
-                <h2>Our Academic Sections</h2>
-                <p>Quality education at every stage — from Pre-Primary to Secondary</p>
-            </div>
-            <div class="programs-grid">
-                <div class="program-card">
-                    <div class="program-icon">
-                        <i class="fas fa-child"></i>
-                    </div>
-                    <h3>Pre-Primary</h3>
-                    <p>LKG &amp; UKG — Play-based, activity-driven learning that sparks curiosity and builds foundational skills.</p>
-                    <a href="departments.html#preprimary" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="program-card">
-                    <div class="program-icon">
-                        <i class="fas fa-pencil-alt"></i>
-                    </div>
-                    <h3>Primary Section</h3>
-                    <p>Classes 1st – 5th — Building strong literacy, numeracy, and thinking skills through engaging teaching methods.</p>
-                    <a href="departments.html#primary" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="program-card">
-                    <div class="program-icon">
-                        <i class="fas fa-book"></i>
-                    </div>
-                    <h3>Middle School</h3>
-                    <p>Classes 6th – 8th — Deepening subject knowledge, critical thinking, and preparing students for higher studies.</p>
-                    <a href="departments.html#middle" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="program-card">
-                    <div class="program-icon">
-                        <i class="fas fa-user-graduate"></i>
-                    </div>
-                    <h3>Secondary Section</h3>
-                    <p>Classes 9th – 10th — Focused, board-exam preparation with subject expertise, practicals, and guidance.</p>
-                    <a href="departments.html#secondary" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Student Development Section -->
-    <section class="placement-section">
-        <div class="section-container">
-            <div class="section-header">
-                <h2>Activities &amp; Student Life</h2>
-                <p>Learning beyond the classroom through sports, culture, science, and creative activities</p>
-            </div>
-            <div class="placement-content">
-                <div class="placement-stats">
-                    <div class="placement-stat-card">
-                        <div class="stat-number" data-target="23" data-suffix="+">0</div>
-                        <p class="stat-label">Years of Excellence</p>
-                    </div>
-                    <div class="placement-stat-card">
-                        <div class="stat-number" data-target="800" data-suffix="+">0</div>
-                        <p class="stat-label">Students Enrolled</p>
-                    </div>
-                    <div class="placement-stat-card">
-                        <div class="stat-number" data-target="30" data-suffix="+">0</div>
-                        <p class="stat-label">Qualified Teachers</p>
-                    </div>
-                    <div class="placement-stat-card">
-                        <div class="stat-number" data-target="12">0</div>
-                        <p class="stat-label">Academic Classes (LKG–10th)</p>
+                    <div class="alumni-modal-footer">
+                        <span class="alumni-modal-pride" id="alumniModalPride">
+                            <i class="fas fa-award"></i> Proud JPS Alumnus
+                        </span>
                     </div>
                 </div>
-                <a href="activities.html" class="btn btn-primary">Explore Activities <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
@@ -602,157 +1329,95 @@
     <section class="recruiters-section">
         <div class="section-container">
             <div class="section-header">
+                <div class="sub-badge-wrapper">
+                    <span class="h-line"></span>
+                    <span class="sub-badge-text">ACCREDITATIONS &amp; HONORS</span>
+                    <span class="h-line"></span>
+                </div>
                 <h2>Our Recognitions &amp; Affiliations</h2>
                 <p>Awards, recognitions, and affiliations that reflect our commitment to quality education</p>
             </div>
             <div class="recruiters-grid">
                 <div class="recruiter-logo">
-                    <div class="logo-placeholder">[Board Affiliation]</div>
+                    <div class="recruiter-icon-wrap"><i class="fas fa-certificate"></i></div>
+                    <div class="logo-placeholder">Maharashtra State Board (MSBSHSE)</div>
                 </div>
                 <div class="recruiter-logo">
+                    <div class="recruiter-icon-wrap"><i class="fas fa-trophy"></i></div>
                     <div class="logo-placeholder">Best School Award</div>
                 </div>
                 <div class="recruiter-logo">
+                    <div class="recruiter-icon-wrap"><i class="fas fa-medal"></i></div>
                     <div class="logo-placeholder">Sports Excellence</div>
                 </div>
                 <div class="recruiter-logo">
+                    <div class="recruiter-icon-wrap"><i class="fas fa-graduation-cap"></i></div>
                     <div class="logo-placeholder">Academic Excellence</div>
                 </div>
                 <div class="recruiter-logo">
+                    <div class="recruiter-icon-wrap"><i class="fas fa-atom"></i></div>
                     <div class="logo-placeholder">Science Olympiad</div>
                 </div>
                 <div class="recruiter-logo">
+                    <div class="recruiter-icon-wrap"><i class="fas fa-palette"></i></div>
                     <div class="logo-placeholder">Cultural Excellence</div>
                 </div>
                 <div class="recruiter-logo">
+                    <div class="recruiter-icon-wrap"><i class="fas fa-leaf"></i></div>
                     <div class="logo-placeholder">Green School Award</div>
                 </div>
                 <div class="recruiter-logo">
-                    <div class="logo-placeholder">Community Service</div>
-                </div>
-                <div class="recruiter-logo">
+                    <div class="recruiter-icon-wrap"><i class="fas fa-calculator"></i></div>
                     <div class="logo-placeholder">Maths Olympiad</div>
                 </div>
-                <div class="recruiter-logo">
-                    <div class="logo-placeholder">Elocution Award</div>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Notice Section -->
-    <section class="notice-section">
+<!-- Direct WhatsApp & Admission Enquiry Desk -->
+    <section id="enquiry" class="enquiry-desk-section">
         <div class="section-container">
-            <div class="section-header">
-                <h2>Latest Notices &amp; Announcements</h2>
-                <p>Stay updated with the latest news and announcements from school</p>
-            </div>
-            <div class="notices-grid">
-                <div class="notice-card">
-                    <div class="notice-date">
-                        <span class="day">15</span>
-                        <span class="month">Sep</span>
-                    </div>
-                    <div class="notice-content">
-                        <span class="notice-category">Admissions</span>
-                        <h4>School Admissions Open 2026–27</h4>
-                        <p>Applications are now open for admission to LKG, UKG, and Classes 1st–10th for the academic year 2026–27.</p>
-                        <a href="#" class="notice-link">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="notice-card">
-                    <div class="notice-date">
-                        <span class="day">12</span>
-                        <span class="month">Sep</span>
-                    </div>
-                    <div class="notice-content">
-                        <span class="notice-category">Events</span>
-                        <h4>Annual Sports Day – 2026</h4>
-                        <p>The Annual Sports Day will be held on the school grounds. All students are encouraged to participate in various events.</p>
-                        <a href="#" class="notice-link">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="notice-card">
-                    <div class="notice-date">
-                        <span class="day">10</span>
-                        <span class="month">Sep</span>
-                    </div>
-                    <div class="notice-content">
-                        <span class="notice-category">Academic</span>
-                        <h4>Half-Yearly Examination Schedule</h4>
-                        <p>Half-yearly examination timetable for Classes 1st to 10th Standard has been published. Download now.</p>
-                        <a href="#" class="notice-link">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="notice-card">
-                    <div class="notice-date">
-                        <span class="day">08</span>
-                        <span class="month">Sep</span>
-                    </div>
-                    <div class="notice-content">
-                        <span class="notice-category">Academic</span>
-                        <h4>Academic Calendar 2026–27</h4>
-                        <p>Download the complete academic calendar for the upcoming academic year including holidays and important dates.</p>
-                        <a href="#" class="notice-link">Read More <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- School Life Section -->
-    <section class="campus-life-section">
-        <div class="section-container">
-            <div class="section-header">
-                <h2>School Life</h2>
-                <p>Vibrant, joyful, and enriching experiences at Jijamata Public School</p>
-            </div>
-            <div class="campus-grid">
-                <div class="campus-item">
-                    <div class="campus-image">
-                        <img src="images/campus1.jpg" alt="School Building" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\' viewBox=\'0 0 400 300\'%3E%3Crect fill=\'%23EEF5FF\' width=\'400\' height=\'300\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'20\' fill=\'%2310294D\'%3ESchool Building%3C/text%3E%3C/svg%3E'">
-                        <div class="campus-overlay">
-                            <h3>School Campus</h3>
+            <div class="enquiry-desk-container">
+                <div class="enquiry-layout">
+                    <div class="enquiry-left">
+                        <div class="sub-badge-wrapper">
+                            <span class="h-line"></span>
+                            <span class="sub-badge-text">ADMISSIONS 2026–27</span>
+                            <span class="h-line"></span>
+                        </div>
+                        <h2>Have Questions? Talk to Our Admission Team</h2>
+                        <p>We are here to help you choose the best education for your child. Connect directly with our admission desk via WhatsApp, call our office, or leave a quick callback request below.</p>
+                        <div class="enquiry-action-buttons">
+                            <a href="https://wa.me/919689684323?text=Hello%20Jijamata%20Public%20School,%20I%20would%20like%20to%20enquire%20about%20admissions%20for%20my%20child." target="_blank" rel="noopener noreferrer" class="btn-whatsapp-chat">
+                                <i class="fab fa-whatsapp" style="font-size: 19px;"></i> Chat on WhatsApp
+                            </a>
+                            <a href="tel:02427295701" class="btn-call-desk">
+                                <i class="fas fa-phone"></i> Call School Office
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div class="campus-item">
-                    <div class="campus-image">
-                        <img src="images/library.jpg" alt="Library" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\' viewBox=\'0 0 400 300\'%3E%3Crect fill=\'%23EEF5FF\' width=\'400\' height=\'300\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'20\' fill=\'%2310294D\'%3ELibrary%3C/text%3E%3C/svg%3E'">
-                        <div class="campus-overlay">
-                            <h3>Library</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="campus-item">
-                    <div class="campus-image">
-                        <img src="images/laboratory.jpg" alt="Science Lab" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\' viewBox=\'0 0 400 300\'%3E%3Crect fill=\'%23EEF5FF\' width=\'400\' height=\'300\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'20\' fill=\'%2310294D\'%3EScience Lab%3C/text%3E%3C/svg%3E'">
-                        <div class="campus-overlay">
-                            <h3>Science Lab</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="campus-item">
-                    <div class="campus-image">
-                        <img src="images/events.jpg" alt="School Events" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\' viewBox=\'0 0 400 300\'%3E%3Crect fill=\'%23EEF5FF\' width=\'400\' height=\'300\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'20\' fill=\'%2310294D\'%3ESchool Events%3C/text%3E%3C/svg%3E'">
-                        <div class="campus-overlay">
-                            <h3>School Events</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="campus-item">
-                    <div class="campus-image">
-                        <img src="images/sports.jpg" alt="Sports" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\' viewBox=\'0 0 400 300\'%3E%3Crect fill=\'%23EEF5FF\' width=\'400\' height=\'300\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'20\' fill=\'%2310294D\'%3ESports%3C/text%3E%3C/svg%3E'">
-                        <div class="campus-overlay">
-                            <h3>Sports</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="campus-item">
-                    <div class="campus-image">
-                        <img src="images/students.jpg" alt="Students" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'300\' viewBox=\'0 0 400 300\'%3E%3Crect fill=\'%23EEF5FF\' width=\'400\' height=\'300\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' dominant-baseline=\'middle\' text-anchor=\'middle\' font-family=\'Arial\' font-size=\'20\' fill=\'%2310294D\'%3EStudents%3C/text%3E%3C/svg%3E'">
-                        <div class="campus-overlay">
-                            <h3>Students</h3>
+                    <div class="enquiry-right">
+                        <div class="enquiry-quick-card">
+                            <h3>Quick Admission Query</h3>
+                            <p>Submit your details to chat instantly with our admission desk on WhatsApp.</p>
+                            <form class="enquiry-form-mini" id="quickAdmissionForm" onsubmit="handleQuickAdmission(event)">
+                                <div class="form-group">
+                                    <input type="text" id="enquiryName" name="enquiryName" placeholder="Parent / Student Full Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" id="enquiryPhone" name="enquiryPhone" placeholder="Mobile / WhatsApp Number (10 Digits)" pattern="[0-9]{10}" title="Please enter a 10-digit mobile number" required>
+                                </div>
+                                <div class="form-group">
+                                    <select id="enquiryGrade" name="enquiryGrade" required>
+                                        <option value="" disabled selected>Select Grade Seeking (LKG to 10th)</option>
+                                        <option value="Pre-Primary (LKG / UKG)">Pre-Primary (LKG / UKG)</option>
+                                        <option value="Primary (1st to 5th Std)">Primary (1st to 5th Std)</option>
+                                        <option value="Middle School (6th to 8th Std)">Middle School (6th to 8th Std)</option>
+                                        <option value="Secondary (9th / 10th Std)">Secondary (9th / 10th Std)</option>
+                                    </select>
+                                </div>
+                                <button type="submit" id="btnSubmitEnquiry" class="btn btn-primary" style="width: 100%; border-radius: 10px; min-height: 44px; margin-top: 6px;">Submit Enquiry on WhatsApp <i class="fab fa-whatsapp" style="margin-left: 6px; font-size: 16px;"></i></button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -760,10 +1425,15 @@
         </div>
     </section>
 
-        <!-- Government Schemes Promo -->
-    <section class="admission-process-section" style="background-color: #f4f7f6; padding: 60px 0;">
+    <!-- Government Schemes Promo -->
+    <section class="admission-process-section" style="background-color: var(--bg-alt); padding: 60px 0;">
         <div class="section-container">
             <div class="section-header">
+                <div class="sub-badge-wrapper">
+                    <span class="h-line"></span>
+                    <span class="sub-badge-text">GOVERNMENT INITIATIVES</span>
+                    <span class="h-line"></span>
+                </div>
                 <h2>Government Admission Schemes</h2>
                 <p>Eligible students may benefit from government-supported admission schemes available at Jijamata Public School.</p>
             </div>
@@ -797,11 +1467,6 @@
         </div>
     </section>
 
-    <!-- Floating Action Button -->
-    <a href="admissions.html" class="floating-enquiry-fab" title="Admission Enquiry">
-        <i class="fas fa-paper-plane"></i>
-        <span>Enquire Now</span>
-    </a>
 
     <!-- Footer -->
     <footer class="main-footer">
@@ -809,6 +1474,7 @@
             <div class="footer-grid">
                 <div class="footer-column">
                     <div class="footer-logo">
+                        <img src="images/logo.png" alt="Jijamata Public School Logo">
                         <i class="fas fa-school"></i>
                         <h3>JIJAMATA PUBLIC SCHOOL</h3>
                     </div>
@@ -817,58 +1483,78 @@
                         Nurturing young minds, building strong character, and shaping the future.
                     </p>
                 </div>
-                <div class="footer-column">
+                <div class="footer-column footer-quick-links-col">
                     <h4>Quick Links</h4>
-                    <ul>
+                    <ul class="footer-links-grid">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="academics.html">Academics</a></li>
+                        <li><a href="about.html">About School</a></li>
                         <li><a href="departments.html">Academic Sections</a></li>
-                        <li><a href="activities.html">Activities</a></li>
-                        <li><a href="placements.html">Student Development</a></li>
-                        <li><a href="admissions.html">Admissions</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Student Links</h4>
-                    <ul>
-                        <li><a href="#">Student Zone</a></li>
-                        <li><a href="#">Notice Board</a></li>
-                        <li><a href="#">Results</a></li>
-                        <li><a href="#">Downloads</a></li>
-                        <li><a href="#">Events</a></li>
+                        <li><a href="academics.html">Academics &amp; Calendar</a></li>
+                        <li><a href="admissions.html">Admissions 2026–27</a></li>
+                        <li><a href="schemes.html">Government Schemes</a></li>
+                        <li><a href="facilities.html">Campus Facilities</a></li>
+                        <li><a href="activities.html">Student Activities</a></li>
+                        <li><a href="cultural-events.html">Cultural Gathering</a></li>
+                        <li><a href="sports-athletics.html">Sports &amp; Athletics</a></li>
+                        <li><a href="gallery.html">Photo Gallery</a></li>
+                        <li><a href="notices.html">Latest Notices</a></li>
+                        <li><a href="hostel.html">Hostel Facilities</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h4>Contact Us</h4>
                     <ul class="contact-info">
                         <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Jijamata Public School, Bhenda BK, Ahmednagar, Maharashtra</span>
+                            <a href="https://www.google.com/maps/search/?api=1&query=Jijamata+Public+School,+Bhenda+Budruk,+Taluka+Nevasa,+District+Ahilyanagar,+Maharashtra" target="_blank" rel="noopener noreferrer" class="footer-address-link" title="Open Google Maps location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Jijamata Public School, Bhenda Budruk, Taluka Nevasa, District Ahilyanagar, Maharashtra</span>
+                            </a>
                         </li>
                         <li>
                             <i class="fas fa-phone"></i>
-                            <span>[Contact Number]</span>
+                            <span><a href="tel:02427295701">02427295701</a> / <a href="tel:9689684323">9689684323</a></span>
                         </li>
                         <li>
                             <i class="fas fa-envelope"></i>
-                            <span>[School Email]</span>
+                            <span><a href="mailto:jpsbhenda@gmail.com">jpsbhenda@gmail.com</a></span>
                         </li>
                     </ul>
                     <div class="footer-social">
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        
+                        <a href="https://wa.me/919689684323" target="_blank" rel="noopener noreferrer" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                         <a href="https://youtube.com/@jijamatapublicschool5042?si=lji02YHtw350a3C7" target="_blank" rel="noopener noreferrer" class="social-icon" title="YouTube Channel"><i class="fab fa-youtube"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Jijamata Public School. All Rights Reserved.</p>
-            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Jijamata Public School. All Rights Reserved.</p><a href="#" class="back-to-top">Back to Top <i class="fas fa-arrow-up"></i></a></div>
         </div>
     </footer>
 
+    <!-- React 18 UMD Libraries -->
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+    <!-- Interactive React Hero Slider Component -->
+    <script src="js/hero-react-slider.js"></script>
+    <!-- Main JavaScript -->
     <script src="js/script.js"></script>
+    <!-- Firebase & Dynamic Content -->
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/dynamic-content.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
