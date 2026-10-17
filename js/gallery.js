@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
             card.className = 'gallery-card js-hidden';
             card.dataset.index = start + index;
             
-            const thumbSrc = item.src.replace('images/gallery/', 'images/gallery-thumbs/');
+            const thumbSrc = item.src.replace(/images\/(?:Gallery|gallery)\//, 'images/gallery-thumbs/');
             
             card.innerHTML = `
                 <img src="${thumbSrc}" alt="${item.alt}" data-full="${item.src}" loading="lazy" decoding="async" onload="this.parentElement.classList.remove('loading');" />
